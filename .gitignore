@@ -1,0 +1,9 @@
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfstate.backup.*
+terraform.auto.tfvars
+.do_token
+*.backup
+db/*.dump

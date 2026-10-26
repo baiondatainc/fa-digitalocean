@@ -1,0 +1,39 @@
+# Remote state in DigitalOcean Spaces.
+#
+# Why: terraform.tfstate contains the plaintext secrets we pass as env (JWT,
+# DB password, LLM key). Storing that file on your laptop is a leak waiting to
+# happen. Spaces is DO's S3-compatible object store; moving state there keeps
+# it off disk, encrypts it at rest, and gives every machine (CI, teammates) a
+# shared source of truth.
+#
+# One-time bootstrap (see scripts/bootstrap-remote-state.sh):
+#   1. doctl spaces create fa-tfstate --region fra1
+#   2. generate Spaces keys at https://cloud.digitalocean.com/account/api/spaces
+#   3. export AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY
+#   4. terraform init -migrate-state
+
+terraform {
+  backend "s3" {
+    # DO Spaces endpoint. `region` is required by the S3 protocol but DO
+    # ignores it — the real location is in `endpoints.s3`.
+    endpoints = {
+      s3 = "https://fra1.digitaloceanspaces.com"
+    }
+    region = "us-east-1"
+
+    bucket = "fa-tfstate"
+    key    = "digitalocean/terraform.tfstate"
+
+    # DO doesn't implement the AWS metadata or STS endpoints, so skip those
+    # checks or Terraform will fail to initialise.
+    skip_credentials_validation = true
+    skip_metadata_api_check     = true
+    skip_requesting_account_id  = true
+    skip_region_validation      = true
+    skip_s3_checksum            = true
+    use_path_style              = false
+
+    # Server-side encryption for the state blob.
+    encrypt = true
+  }
+}

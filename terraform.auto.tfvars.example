@@ -1,0 +1,17 @@
+# Copy to terraform.auto.tfvars (gitignored) and fill in before `terraform apply`.
+#
+# project_name  = "future-advisor"
+# region        = "fra1"
+# registry_name = "future-advisor"      # must match `doctl registry get`
+# image_tag     = "latest"              # or a git SHA from push-docker-do.sh
+#
+# pg_size    = "db-s-1vcpu-1gb"
+# redis_size = "db-s-1vcpu-1gb"
+#
+# office_ips = ["203.0.113.42/32"]
+#
+# llm_api_key = "sk-ant-..."
+# jwt_secret  = "generate-a-strong-random-string"
+#
+# do_token = "dop_v1_...."            # or export DIGITALOCEAN_TOKEN
+office_ips = ["YOUR_PUBLIC_IP/32"]
