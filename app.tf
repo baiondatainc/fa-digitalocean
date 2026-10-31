@@ -257,6 +257,33 @@ resource "digitalocean_app" "fa" {
       }
     }
 
+    # ---------------- ingest-beat (Celery scheduler) ----------------
+    # Fires the ingest crons (EIA Brent/WTI, FRED, IMF WEO, etc). Without this
+    # worker the ingest-worker just sits idle waiting for jobs that never arrive.
+    worker {
+      name               = "ingest-beat"
+      instance_count     = 1
+      instance_size_slug = "basic-xxs"
+
+      image {
+        registry_type = "DOCR"
+        repository    = "ingest-worker"
+        tag           = var.image_tag
+      }
+      run_command = "celery -A ingest.celery_app beat --loglevel=info"
+
+      env {
+        key   = "DATABASE_URL"
+        value = local.database_url
+        type  = "SECRET"
+      }
+      env {
+        key   = "REDIS_URL"
+        value = local.redis_uri
+        type  = "SECRET"
+      }
+    }
+
     # NOTE: an initial forecast cycle job used to run here as PRE_DEPLOY, but
     # it required migrations to be applied first. Run cycles on-demand via
     # the /agent/dubai/cycle endpoint instead, or add a POST_DEPLOY job once
