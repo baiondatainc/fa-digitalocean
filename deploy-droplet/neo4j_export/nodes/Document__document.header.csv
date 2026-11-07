@@ -1,0 +1,1 @@
+id:ID(Document),source_code:string,title:string,object_key:string,parsed_key:string,mime_type:string,pages:int,published_at:localdatetime,retrieved_at:localdatetime,parse_status:string,kind:string,rows:int,_origin:string

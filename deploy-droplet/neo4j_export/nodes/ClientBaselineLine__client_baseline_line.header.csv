@@ -1,0 +1,1 @@
+id:ID(ClientBaselineLine),environment_id:string,line:string,year:int,value_aed_m:float,source_file:string,sheet_name:string,loaded_at:datetime,cell_range:string,_origin:string

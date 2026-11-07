@@ -1,0 +1,1 @@
+instrument_id:ID(SsotMarketQuote),value:float,change_abs:float,change_pct:float,asof:datetime,source:string,retrieved_at:datetime,_origin:string

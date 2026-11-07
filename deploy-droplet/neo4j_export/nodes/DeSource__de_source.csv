@@ -1,0 +1,24 @@
+global|International Monetary Fund,global,International Monetary Fund,https://data.imf.org/,"WEO: GDP growth, inflation, unemployment, ≥2-year forecasts",live,gold.de_source
+global|World Bank — World Development Indicators,global,World Bank — World Development Indicators,https://databank.worldbank.org/,"GDP, population, trade",live,gold.de_source
+global|UNCTAD Statistics,global,UNCTAD Statistics,https://unctad.org/statistics,Trade and FDI flows,planned,gold.de_source
+global|OECD Data Explorer,global,OECD Data Explorer,https://data-explorer.oecd.org/,"CPI, leading indicators",live,gold.de_source
+uae|S&P Global PMI,uae,S&P Global PMI,https://www.pmi.spglobal.com/,UAE non-oil PMI (monthly),planned,gold.de_source
+uae|Ministry of Economy & Tourism,uae,Ministry of Economy & Tourism,https://www.moet.gov.ae/web/guest/economic-report,Economic reports and studies,planned,gold.de_source
+uae|UAE Central Bank,uae,UAE Central Bank,https://www.centralbank.ae/,"Base rate, credit, banking",planned,gold.de_source
+uae|Federal Competitiveness & Statistics Centre,uae,Federal Competitiveness & Statistics Centre,https://fcsc.gov.ae/,UAE GDP by sector (constant prices),planned,gold.de_source
+uae|GCC Statistical Centre,uae,GCC Statistical Centre,https://gccstat.org,Regional aggregates,planned,gold.de_source
+uae|Arab Monetary Fund,uae,Arab Monetary Fund,https://www.amf.org.ae/en,Arab economies (CSV),planned,gold.de_source
+dubai|Dubai Data and Statistics Establishment,dubai,Dubai Data and Statistics Establishment,https://www.dsc.gov.ae/,"Dubai GDP by sector, employment, compensation, CPI",pending credentials,gold.de_source
+dubai|Dubai FDI reports,dubai,Dubai FDI reports,https://www.investindubai.gov.ae/en/insights-and-resources/annual-fdi-reports,Annual FDI,planned,gold.de_source
+dubai|Supreme Legislation Committee,dubai,Supreme Legislation Committee,https://dlp.dubai.gov.ae/,Law database (policy events),planned,gold.de_source
+dubai|Department of Economy & Tourism,dubai,Department of Economy & Tourism,https://www.dubaidet.gov.ae/,"Visitors, licences, hotel KPIs",planned,gold.de_source
+dubai|Dubai Land Department,dubai,Dubai Land Department,https://dubailand.gov.ae/,"Real-estate transactions, rentals",pending credentials,gold.de_source
+dubai|Government of Dubai entities,dubai,Government of Dubai entities,https://www.dubai.ae/,Entity submissions (GRC ),internal,gold.de_source
+emirate|Data.Dubai,emirate,Data.Dubai,https://data.dubai/en/,"portal, Request Data service",active,gold.de_source
+emirate|Dubai Pulse API,emirate,Dubai Pulse API,https://api.dubaipulse.gov.ae,"DSC, DLD, DET, DEWA, DED, DoF pricing datasets",active,gold.de_source
+emirate|Dubai Statistics Centre (via Dubai Pulse),emirate,Dubai Statistics Centre (via Dubai Pulse),https://www.dubaipulse.gov.ae/organisation/dubai-statistics-center/service/dsc-statistics,"GDP, employment, prices, population, visitors, investment",active,gold.de_source
+emirate|DoF website open data,emirate,DoF website open data,https://www.dof.gov.ae,budget revenue 2021–2026 (HTML .xls),active,gold.de_source
+emirate|DoF Government Service Prices,emirate,DoF Government Service Prices,https://www.dubaipulse.gov.ae/data/dof-pricing/dof_government_service_prices-open,fee and fine price list,active,gold.de_source
+emirate|Dubai Land Department (via Dubai Pulse),emirate,Dubai Land Department (via Dubai Pulse),https://www.dubaipulse.gov.ae/organisation/dubai-land-department,"transactions, Ejari rent contracts",active,gold.de_source
+emirate|DET hotel performance (via Dubai Pulse),emirate,DET hotel performance (via Dubai Pulse),https://www.dubaipulse.gov.ae/data/dtcm-general/dtcm_hotel_establishment_performance-open,"occupancy, ADR, RevPAR",active,gold.de_source
+federal|FCSC Bayanat mirror of Dubai Pulse,federal,FCSC Bayanat mirror of Dubai Pulse,https://opendata.fcsc.gov.ae/@dubaipulse,"anonymous JSON, 2022 snapshot, lookups only",reference,gold.de_source

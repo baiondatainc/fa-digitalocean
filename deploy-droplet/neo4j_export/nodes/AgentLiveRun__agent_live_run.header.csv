@@ -1,0 +1,1 @@
+id:ID(AgentLiveRun),environment_id:string,preset_id:string,model_id:string,config_version:string,drivers:string,output:string,fiscal:string,what_moved:string,narrative_md:string,narrative_verified:boolean,inputs_hash:string,refreshed_at:datetime,llm_model:string,prompt_hash:string,news:string,news_hash:string,signals_applied:string,_origin:string

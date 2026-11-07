@@ -1,0 +1,11 @@
+BRENT,Brent crude price,USD_PER_BBL,leading,Yahoo Finance BZ=F,false,public.dim_driver
+USFED,US Fed Funds upper bound,PCT,leading,FRED DFF,false,public.dim_driver
+DXY,US dollar index,INDEX,leading,Yahoo Finance DX-Y.NYB,false,public.dim_driver
+PMI,UAE PMI,INDEX,coincident,S&P Global,false,public.dim_driver
+TOUR,Dubai tourist arrivals,PERSONS,coincident,DET,false,public.dim_driver
+NOGDP,Non-oil GDP growth,PCT,coincident,DSC,false,public.dim_driver
+RETXN,Real-estate transactions,INDEX,coincident,DLD,false,public.dim_driver
+DNOIL,Dubai oil production,INDEX,lagging,DoF,false,public.dim_driver
+EMP,Employment,PERSONS,lagging,DSC,false,public.dim_driver
+VAT,VAT rate,PCT,policy,FTA,true,public.dim_driver
+CIT,Corporate income tax rate,PCT,policy,FTA,true,public.dim_driver

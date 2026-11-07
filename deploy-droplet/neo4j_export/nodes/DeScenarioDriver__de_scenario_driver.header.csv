@@ -1,0 +1,1 @@
+code:ID(DeScenarioDriver),label:string,driver_group:string,group_name:string,group_tag:string,unit:string,delta_unit:string,dec:int,min_val:float,max_val:float,step_val:float,locked:boolean,sort_order:int,live_instrument_id:string,live_source:string,live_series:string,live_transform:string,live_cadence_min:int,_origin:string

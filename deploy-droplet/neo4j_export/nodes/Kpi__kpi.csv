@@ -1,0 +1,40 @@
+GDP_NOMINAL_USD,Nominal GDP,USD_BN,A,macro,"GDP at current prices, USD billions",public.kpi
+GDP_PER_CAPITA_USD,GDP per capita,USD,A,macro,"GDP per capita, current prices",public.kpi
+GDP_REAL_GROWTH,Real GDP growth,PCT,A,macro,Annual percent change of real GDP,public.kpi
+CPI_YOY,Inflation (CPI),PCT,A,macro,"Consumer price inflation, annual average",public.kpi
+UNEMPLOYMENT_RATE,Unemployment rate,PCT,A,macro,Share of labour force,public.kpi
+POPULATION,Population,PERSONS,A,demographic,Resident population,public.kpi
+POLICY_RATE,Central bank policy rate,PCT,M,rates,"Main policy rate, end of month",public.kpi
+OIL_WTI_SPOT,WTI crude spot,USD_PER_BBL,D,commodity,"Cushing, OK WTI spot price FOB",public.kpi
+OIL_BRENT_SPOT,Brent crude spot,USD_PER_BBL,D,commodity,Europe Brent spot price FOB,public.kpi
+GOV_REVENUE_TOTAL,Total government revenues,AED_BN,A,fiscal,Dubai Government revenues,public.kpi
+GOV_REVENUE_FEES,Fees and charges,AED_BN,A,fiscal,Revenue line,public.kpi
+GOV_REVENUE_TAX,"VAT, excise and customs",AED_BN,A,fiscal,Revenue line,public.kpi
+GOV_REVENUE_OIL,Oil revenues,AED_BN,A,fiscal,Revenue line,public.kpi
+GOV_REVENUE_INVESTMENT,Returns on government investments,AED_BN,A,fiscal,Revenue line,public.kpi
+GOV_EXPENDITURE_TOTAL,Total government expenditures,AED_BN,A,fiscal,Dubai Government expenditure,public.kpi
+GOV_EXP_WAGES,Wages and salaries,AED_BN,A,fiscal,Expenditure line,public.kpi
+GOV_EXP_GOODS,Goods and services,AED_BN,A,fiscal,Expenditure line,public.kpi
+GOV_EXP_GRANTS,Grants and social support,AED_BN,A,fiscal,Expenditure line,public.kpi
+GOV_EXP_CAPITAL,Capital and infrastructure projects,AED_BN,A,fiscal,Expenditure line,public.kpi
+GOV_SURPLUS,Surplus / deficit,AED_BN,A,fiscal,Revenues minus expenditures,public.kpi
+D33_FDI_ANNUAL,FDI capital inflows,AED_BN,A,d33,Dubai FDI Monitor annual result,public.kpi
+D33_GOV_EXPENDITURE_CUM,Government expenditure (D33 cumulative),AED_BN,A,d33,Cumulative from 2023,public.kpi
+PMI_HEADLINE,PMI headline index,INDEX,M,sector,Headline value only unless licensed,public.kpi
+GOV_DEBT_PCT_GDP,General government gross debt,PCT_GDP,A,fiscal,Percent of GDP,public.kpi
+FISCAL_BALANCE_PCT_GDP,General government net lending/borrowing,PCT_GDP,A,fiscal,Percent of GDP,public.kpi
+GOV_REVENUE_PCT_GDP,General government revenue,PCT_GDP,A,fiscal,Percent of GDP,public.kpi
+GOV_EXPENDITURE_PCT_GDP,General government expenditure,PCT_GDP,A,fiscal,Percent of GDP,public.kpi
+CURRENT_ACCOUNT_PCT_GDP,Current account balance,PCT_GDP,A,external,Percent of GDP,public.kpi
+CPI_MONTHLY_YOY,"Inflation (CPI, monthly y/y)",PCT,M,macro,"All items, year on year",public.kpi
+BOND_YIELD_10Y,10-year government bond yield,PCT,D,rates,Constant maturity,public.kpi
+FX_USD_INDEX,Broad US dollar index,INDEX,D,fx,Trade-weighted,public.kpi
+FX_EUR_USD,EUR/USD reference rate,USD,D,fx,ECB reference rate,public.kpi
+OIL_BRENT_FORECAST,Brent price forecast (EIA STEO),USD_PER_BBL,M,commodity,Short-Term Energy Outlook,public.kpi
+OIL_WTI_FORECAST,WTI price forecast (EIA STEO),USD_PER_BBL,M,commodity,Short-Term Energy Outlook,public.kpi
+EXPORTS_GOODS_SERVICES_PCT_GDP,Exports of goods and services,PCT_GDP,A,external,Percent of GDP,public.kpi
+FDI_INFLOW_USD,FDI net inflows,USD_BN,A,external,"Balance of payments, current USD",public.kpi
+GDP_CONSTANT_2015_USD,"GDP, constant 2015 USD",USD_BN,A,macro,FAO Macro Indicators,public.kpi
+AGRI_VALUE_ADDED_USD,"Agriculture value added, constant 2015 USD",USD_BN,A,macro,FAO Macro Indicators,public.kpi
+ECONOMY_GROUP,WEO economy group,INDEX,A,helper,,public.kpi
+DXB_REAL_GDP,"Dubai real GDP (AED m, constant basis)",AED m,annual,economy,,public.kpi

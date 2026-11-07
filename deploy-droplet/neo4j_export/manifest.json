@@ -1,0 +1,2005 @@
+{
+  "nodes": {
+    "AgentConfig": {
+      "id": "id",
+      "parts": {
+        "AgentConfig__agent_config": [
+          "id:ID(AgentConfig)",
+          "environment_id:string",
+          "agent_key:string",
+          "config:string",
+          "updated_at:datetime",
+          "updated_by:string",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "environment_id": "string",
+        "agent_key": "string",
+        "config": "string",
+        "updated_at": "datetime",
+        "updated_by": "string",
+        "_origin": "string"
+      }
+    },
+    "AgentLiveRun": {
+      "id": "id",
+      "parts": {
+        "AgentLiveRun__agent_live_run": [
+          "id:ID(AgentLiveRun)",
+          "environment_id:string",
+          "preset_id:string",
+          "model_id:string",
+          "config_version:string",
+          "drivers:string",
+          "output:string",
+          "fiscal:string",
+          "what_moved:string",
+          "narrative_md:string",
+          "narrative_verified:boolean",
+          "inputs_hash:string",
+          "refreshed_at:datetime",
+          "llm_model:string",
+          "prompt_hash:string",
+          "news:string",
+          "news_hash:string",
+          "signals_applied:string",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "environment_id": "string",
+        "preset_id": "string",
+        "model_id": "string",
+        "config_version": "string",
+        "drivers": "string",
+        "output": "string",
+        "fiscal": "string",
+        "what_moved": "string",
+        "narrative_md": "string",
+        "narrative_verified": "boolean",
+        "inputs_hash": "string",
+        "refreshed_at": "datetime",
+        "llm_model": "string",
+        "prompt_hash": "string",
+        "news": "string",
+        "news_hash": "string",
+        "signals_applied": "string",
+        "_origin": "string"
+      }
+    },
+    "AgentRun": {
+      "id": "id",
+      "parts": {
+        "AgentRun__agent_run": [
+          "id:ID(AgentRun)",
+          "environment_id:string",
+          "trigger:string",
+          "inputs_hash:string",
+          "status:string",
+          "presets_written:int",
+          "llm_model:string",
+          "prompt_hash:string",
+          "tokens_in:int",
+          "tokens_out:int",
+          "error:string",
+          "started_at:datetime",
+          "finished_at:datetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "environment_id": "string",
+        "trigger": "string",
+        "inputs_hash": "string",
+        "status": "string",
+        "presets_written": "int",
+        "llm_model": "string",
+        "prompt_hash": "string",
+        "tokens_in": "int",
+        "tokens_out": "int",
+        "error": "string",
+        "started_at": "datetime",
+        "finished_at": "datetime",
+        "_origin": "string"
+      }
+    },
+    "BacktestConfig": {
+      "id": "id",
+      "parts": {
+        "BacktestConfig__backtest_config": [
+          "id:ID(BacktestConfig)",
+          "environment_id:string",
+          "version:string",
+          "schema_version:int",
+          "config:string",
+          "provenance:string",
+          "built_at:datetime",
+          "is_current:boolean",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "environment_id": "string",
+        "version": "string",
+        "schema_version": "int",
+        "config": "string",
+        "provenance": "string",
+        "built_at": "datetime",
+        "is_current": "boolean",
+        "_origin": "string"
+      }
+    },
+    "BacktestRun": {
+      "id": "id",
+      "parts": {
+        "BacktestRun__backtest_run": [
+          "id:ID(BacktestRun)",
+          "environment_id:string",
+          "config_version:string",
+          "target_id:string",
+          "variant_id:string",
+          "as_of_vintages:boolean",
+          "metrics:string",
+          "folds:string",
+          "portfolio:string",
+          "compare:string",
+          "inputs_hash:string",
+          "created_by:string",
+          "created_at:datetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "environment_id": "string",
+        "config_version": "string",
+        "target_id": "string",
+        "variant_id": "string",
+        "as_of_vintages": "boolean",
+        "metrics": "string",
+        "folds": "string",
+        "portfolio": "string",
+        "compare": "string",
+        "inputs_hash": "string",
+        "created_by": "string",
+        "created_at": "datetime",
+        "_origin": "string"
+      }
+    },
+    "ClientBaselineLine": {
+      "id": "id",
+      "parts": {
+        "ClientBaselineLine__client_baseline_line": [
+          "id:ID(ClientBaselineLine)",
+          "environment_id:string",
+          "line:string",
+          "year:int",
+          "value_aed_m:float",
+          "source_file:string",
+          "sheet_name:string",
+          "loaded_at:datetime",
+          "cell_range:string",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "environment_id": "string",
+        "line": "string",
+        "year": "int",
+        "value_aed_m": "float",
+        "source_file": "string",
+        "sheet_name": "string",
+        "loaded_at": "datetime",
+        "cell_range": "string",
+        "_origin": "string"
+      }
+    },
+    "ClientPolicyMeasure": {
+      "id": "id",
+      "parts": {
+        "ClientPolicyMeasure__client_policy_measure": [
+          "id:ID(ClientPolicyMeasure)",
+          "environment_id:string",
+          "measure_id:string",
+          "description:string",
+          "enabled_default:boolean",
+          "intro_year:int",
+          "yields:string",
+          "source_file:string",
+          "loaded_at:datetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "environment_id": "string",
+        "measure_id": "string",
+        "description": "string",
+        "enabled_default": "boolean",
+        "intro_year": "int",
+        "yields": "string",
+        "source_file": "string",
+        "loaded_at": "datetime",
+        "_origin": "string"
+      }
+    },
+    "Series": {
+      "id": "series_id",
+      "parts": {
+        "Series__de_cofog": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "cofog_code:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__de_driver": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "driver_group:string",
+          "metric:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__de_expenditure_entity": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "entity_code:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__de_fiscal_history": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "series_group:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__de_gdp_quarterly": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "prices_basis:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__de_gdp_sector": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "sector_code:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__de_macro_baseline": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__de_measure_impact": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__de_revenue_account": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "account_code:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__de_revenue_entity": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "entity_code:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__de_scenario_line": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__de_scenario_macro": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__gold_bis_cbpol": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "country_code:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__gold_ecb": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "country_code:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__gold_eia": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "country_code:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__gold_fred": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "country_code:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__gold_imf_weo": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "country_code:string",
+          "economy_group:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__gold_oecd_mei": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "country_code:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__gold_wb_data360": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "country_code:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__gold_wb_wdi": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "country_code:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ],
+        "Series__ssot_market_series": [
+          "series_id:ID(Series)",
+          "table:string",
+          "measure:string",
+          "instrument_id:string",
+          "n_points:int",
+          "first_period:string",
+          "last_period:string",
+          "latest_value:float",
+          "min_value:float",
+          "max_value:float",
+          "mean_value:float",
+          "has_points:boolean",
+          "periods:string[]",
+          "values:float[]",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "series_id": "id",
+        "table": "string",
+        "measure": "string",
+        "cofog_code": "string",
+        "n_points": "int",
+        "first_period": "string",
+        "last_period": "string",
+        "latest_value": "float",
+        "min_value": "float",
+        "max_value": "float",
+        "mean_value": "float",
+        "has_points": "boolean",
+        "periods": "string[]",
+        "values": "float[]",
+        "_origin": "string",
+        "driver_group": "string",
+        "metric": "string",
+        "entity_code": "string",
+        "series_group": "string",
+        "prices_basis": "string",
+        "sector_code": "string",
+        "account_code": "string",
+        "country_code": "string",
+        "economy_group": "string",
+        "instrument_id": "string"
+      }
+    },
+    "DeMeasure": {
+      "id": "measure_id",
+      "parts": {
+        "DeMeasure__de_measure": [
+          "measure_id:ID(DeMeasure)",
+          "ia_name:string",
+          "short_name:string",
+          "family:string",
+          "rate:string",
+          "sector:string",
+          "start_year:int",
+          "default_on:boolean",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "measure_id": "id",
+        "ia_name": "string",
+        "short_name": "string",
+        "family": "string",
+        "rate": "string",
+        "sector": "string",
+        "start_year": "int",
+        "default_on": "boolean",
+        "_origin": "string"
+      }
+    },
+    "DeScenarioDriver": {
+      "id": "code",
+      "parts": {
+        "DeScenarioDriver__de_scenario_driver": [
+          "code:ID(DeScenarioDriver)",
+          "label:string",
+          "driver_group:string",
+          "group_name:string",
+          "group_tag:string",
+          "unit:string",
+          "delta_unit:string",
+          "dec:int",
+          "min_val:float",
+          "max_val:float",
+          "step_val:float",
+          "locked:boolean",
+          "sort_order:int",
+          "live_instrument_id:string",
+          "live_source:string",
+          "live_series:string",
+          "live_transform:string",
+          "live_cadence_min:int",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "code": "id",
+        "label": "string",
+        "driver_group": "string",
+        "group_name": "string",
+        "group_tag": "string",
+        "unit": "string",
+        "delta_unit": "string",
+        "dec": "int",
+        "min_val": "float",
+        "max_val": "float",
+        "step_val": "float",
+        "locked": "boolean",
+        "sort_order": "int",
+        "live_instrument_id": "string",
+        "live_source": "string",
+        "live_series": "string",
+        "live_transform": "string",
+        "live_cadence_min": "int",
+        "_origin": "string"
+      }
+    },
+    "DeScenarioDriverValue": {
+      "id": "id",
+      "parts": {
+        "DeScenarioDriverValue__de_scenario_driver_value": [
+          "id:ID(DeScenarioDriverValue)",
+          "scenario:string",
+          "code:string",
+          "value:float",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "scenario": "string",
+        "code": "string",
+        "value": "float",
+        "_origin": "string"
+      }
+    },
+    "DeScenarioElasticity": {
+      "id": "id",
+      "parts": {
+        "DeScenarioElasticity__de_scenario_elasticity": [
+          "id:ID(DeScenarioElasticity)",
+          "line_name:string",
+          "driver_code:string",
+          "elasticity:float",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "line_name": "string",
+        "driver_code": "string",
+        "elasticity": "float",
+        "_origin": "string"
+      }
+    },
+    "DeSource": {
+      "id": "id",
+      "parts": {
+        "DeSource__de_source": [
+          "id:ID(DeSource)",
+          "level:string",
+          "name:string",
+          "url:string",
+          "provides:string",
+          "status:string",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "level": "string",
+        "name": "string",
+        "url": "string",
+        "provides": "string",
+        "status": "string",
+        "_origin": "string"
+      }
+    },
+    "FiscalForecastConfig": {
+      "id": "id",
+      "parts": {
+        "FiscalForecastConfig__fiscal_forecast_config": [
+          "id:ID(FiscalForecastConfig)",
+          "environment_id:string",
+          "version:string",
+          "schema_version:int",
+          "config:string",
+          "provenance:string",
+          "built_at:datetime",
+          "is_current:boolean",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "environment_id": "string",
+        "version": "string",
+        "schema_version": "int",
+        "config": "string",
+        "provenance": "string",
+        "built_at": "datetime",
+        "is_current": "boolean",
+        "_origin": "string"
+      }
+    },
+    "FiscalForecastRun": {
+      "id": "id",
+      "parts": {
+        "FiscalForecastRun__fiscal_forecast_run": [
+          "id:ID(FiscalForecastRun)",
+          "environment_id:string",
+          "config_version:string",
+          "preset_id:string",
+          "rules:string",
+          "macro:string",
+          "revenue:string",
+          "reconciliation:string",
+          "plan:string",
+          "inputs_hash:string",
+          "created_by:string",
+          "created_at:datetime",
+          "engine_run_id:string",
+          "vintages:string",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "environment_id": "string",
+        "config_version": "string",
+        "preset_id": "string",
+        "rules": "string",
+        "macro": "string",
+        "revenue": "string",
+        "reconciliation": "string",
+        "plan": "string",
+        "inputs_hash": "string",
+        "created_by": "string",
+        "created_at": "datetime",
+        "engine_run_id": "string",
+        "vintages": "string",
+        "_origin": "string"
+      }
+    },
+    "MtffDashboardConfig": {
+      "id": "id",
+      "parts": {
+        "MtffDashboardConfig__mtff_dashboard_config": [
+          "id:ID(MtffDashboardConfig)",
+          "environment_id:string",
+          "version:string",
+          "schema_version:int",
+          "config:string",
+          "provenance:string",
+          "built_at:datetime",
+          "is_current:boolean",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "environment_id": "string",
+        "version": "string",
+        "schema_version": "int",
+        "config": "string",
+        "provenance": "string",
+        "built_at": "datetime",
+        "is_current": "boolean",
+        "_origin": "string"
+      }
+    },
+    "PolicySimTerm": {
+      "id": "id",
+      "parts": {
+        "PolicySimTerm__policy_sim_term": [
+          "id:ID(PolicySimTerm)",
+          "environment_id:string",
+          "cycle:string",
+          "world_run_id:string",
+          "created_by:string",
+          "created_at:datetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "environment_id": "string",
+        "cycle": "string",
+        "world_run_id": "string",
+        "created_by": "string",
+        "created_at": "datetime",
+        "_origin": "string"
+      }
+    },
+    "ScenarioEngineConfig": {
+      "id": "id",
+      "parts": {
+        "ScenarioEngineConfig__scenario_engine_config": [
+          "id:ID(ScenarioEngineConfig)",
+          "environment_id:string",
+          "version:string",
+          "schema_version:int",
+          "config:string",
+          "provenance:string",
+          "built_at:datetime",
+          "is_current:boolean",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "environment_id": "string",
+        "version": "string",
+        "schema_version": "int",
+        "config": "string",
+        "provenance": "string",
+        "built_at": "datetime",
+        "is_current": "boolean",
+        "_origin": "string"
+      }
+    },
+    "ScenarioEngineRun": {
+      "id": "id",
+      "parts": {
+        "ScenarioEngineRun__scenario_engine_run": [
+          "id:ID(ScenarioEngineRun)",
+          "environment_id:string",
+          "config_version:string",
+          "model_id:string",
+          "preset_id:string",
+          "overrides:string",
+          "feedback_on:boolean",
+          "focus_year:int",
+          "output:string",
+          "inputs_hash:string",
+          "created_by:string",
+          "created_at:datetime",
+          "run_name:string",
+          "description:string",
+          "version_no:int",
+          "state:string",
+          "supersedes_run_id:string",
+          "vintages:string",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "environment_id": "string",
+        "config_version": "string",
+        "model_id": "string",
+        "preset_id": "string",
+        "overrides": "string",
+        "feedback_on": "boolean",
+        "focus_year": "int",
+        "output": "string",
+        "inputs_hash": "string",
+        "created_by": "string",
+        "created_at": "datetime",
+        "run_name": "string",
+        "description": "string",
+        "version_no": "int",
+        "state": "string",
+        "supersedes_run_id": "string",
+        "vintages": "string",
+        "_origin": "string"
+      }
+    },
+    "SsotCountryMacro": {
+      "id": "iso3",
+      "parts": {
+        "SsotCountryMacro__ssot_country_macro": [
+          "iso3:ID(SsotCountryMacro)",
+          "country:string",
+          "gdp_usd_bn:float",
+          "gdp_growth_pct:float",
+          "interest_rate_pct:float",
+          "inflation_rate_pct:float",
+          "jobless_rate_pct:float",
+          "gov_budget_pct_gdp:float",
+          "debt_pct_gdp:float",
+          "current_account_pct_gdp:float",
+          "population_mn:float",
+          "asof:date",
+          "provenance:string",
+          "retrieved_at:datetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "iso3": "id",
+        "country": "string",
+        "gdp_usd_bn": "float",
+        "gdp_growth_pct": "float",
+        "interest_rate_pct": "float",
+        "inflation_rate_pct": "float",
+        "jobless_rate_pct": "float",
+        "gov_budget_pct_gdp": "float",
+        "debt_pct_gdp": "float",
+        "current_account_pct_gdp": "float",
+        "population_mn": "float",
+        "asof": "date",
+        "provenance": "string",
+        "retrieved_at": "datetime",
+        "_origin": "string"
+      }
+    },
+    "SsotMarketInstrument": {
+      "id": "instrument_id",
+      "parts": {
+        "SsotMarketInstrument__ssot_market_instrument": [
+          "instrument_id:ID(SsotMarketInstrument)",
+          "symbol:string",
+          "name:string",
+          "cls:string",
+          "country_iso3:string",
+          "publisher:string",
+          "publisher_code:string",
+          "currency:string",
+          "unit:string",
+          "active:boolean",
+          "created_at:datetime",
+          "updated_at:datetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "instrument_id": "id",
+        "symbol": "string",
+        "name": "string",
+        "cls": "string",
+        "country_iso3": "string",
+        "publisher": "string",
+        "publisher_code": "string",
+        "currency": "string",
+        "unit": "string",
+        "active": "boolean",
+        "created_at": "datetime",
+        "updated_at": "datetime",
+        "_origin": "string"
+      }
+    },
+    "SsotMarketNews": {
+      "id": "id",
+      "parts": {
+        "SsotMarketNews__ssot_market_news": [
+          "id:ID(SsotMarketNews)",
+          "headline:string",
+          "lede:string",
+          "body_md:string",
+          "asof:datetime",
+          "category:string",
+          "related_instruments:string[]",
+          "image_url:string",
+          "source:string",
+          "source_url:string",
+          "agent_run_id:string",
+          "retrieved_at:datetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "headline": "string",
+        "lede": "string",
+        "body_md": "string",
+        "asof": "datetime",
+        "category": "string",
+        "related_instruments": "string[]",
+        "image_url": "string",
+        "source": "string",
+        "source_url": "string",
+        "agent_run_id": "string",
+        "retrieved_at": "datetime",
+        "_origin": "string"
+      }
+    },
+    "SsotMarketQuote": {
+      "id": "instrument_id",
+      "parts": {
+        "SsotMarketQuote__ssot_market_quote": [
+          "instrument_id:ID(SsotMarketQuote)",
+          "value:float",
+          "change_abs:float",
+          "change_pct:float",
+          "asof:datetime",
+          "source:string",
+          "retrieved_at:datetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "instrument_id": "id",
+        "value": "float",
+        "change_abs": "float",
+        "change_pct": "float",
+        "asof": "datetime",
+        "source": "string",
+        "retrieved_at": "datetime",
+        "_origin": "string"
+      }
+    },
+    "PrismaMigrations": {
+      "id": "id",
+      "parts": {
+        "PrismaMigrations___prisma_migrations": [
+          "id:ID(PrismaMigrations)",
+          "checksum:string",
+          "finished_at:datetime",
+          "migration_name:string",
+          "logs:string",
+          "rolled_back_at:datetime",
+          "started_at:datetime",
+          "applied_steps_count:int",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "checksum": "string",
+        "finished_at": "datetime",
+        "migration_name": "string",
+        "logs": "string",
+        "rolled_back_at": "datetime",
+        "started_at": "datetime",
+        "applied_steps_count": "int",
+        "_origin": "string"
+      }
+    },
+    "BspCycle": {
+      "id": "id",
+      "parts": {
+        "BspCycle__bsp_cycle": [
+          "id:ID(BspCycle)",
+          "name:string",
+          "starts_at:localdatetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "name": "string",
+        "starts_at": "localdatetime",
+        "_origin": "string"
+      }
+    },
+    "BspStage": {
+      "id": "id",
+      "parts": {
+        "BspStage__bsp_stage": [
+          "id:ID(BspStage)",
+          "cycle_id:string",
+          "number:int",
+          "name:string",
+          "milestone:string",
+          "due_at:localdatetime",
+          "owner:string",
+          "status:string",
+          "forms:string[]",
+          "rework_loops:int",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "cycle_id": "string",
+        "number": "int",
+        "name": "string",
+        "milestone": "string",
+        "due_at": "localdatetime",
+        "owner": "string",
+        "status": "string",
+        "forms": "string[]",
+        "rework_loops": "int",
+        "_origin": "string"
+      }
+    },
+    "Driver": {
+      "id": "driver_code",
+      "parts": {
+        "Driver__dim_driver": [
+          "driver_code:ID(Driver)",
+          "name:string",
+          "unit:string",
+          "timing:string",
+          "source:string",
+          "is_policy:boolean",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "driver_code": "id",
+        "name": "string",
+        "unit": "string",
+        "timing": "string",
+        "source": "string",
+        "is_policy": "boolean",
+        "_origin": "string"
+      }
+    },
+    "Line": {
+      "id": "line_code",
+      "parts": {
+        "Line__dim_line": [
+          "line_code:ID(Line)",
+          "family_name:string",
+          "block:string",
+          "sort_order:int",
+          "is_tax:boolean",
+          "description:string",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "line_code": "id",
+        "family_name": "string",
+        "block": "string",
+        "sort_order": "int",
+        "is_tax": "boolean",
+        "description": "string",
+        "_origin": "string"
+      }
+    },
+    "LineSourceMap": {
+      "id": "id",
+      "parts": {
+        "LineSourceMap__dim_line_source_map": [
+          "id:ID(LineSourceMap)",
+          "source:string",
+          "source_line_name:string",
+          "line_code:string",
+          "note:string",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "source": "string",
+        "source_line_name": "string",
+        "line_code": "string",
+        "note": "string",
+        "_origin": "string"
+      }
+    },
+    "Document": {
+      "id": "id",
+      "parts": {
+        "Document__document": [
+          "id:ID(Document)",
+          "source_code:string",
+          "title:string",
+          "object_key:string",
+          "parsed_key:string",
+          "mime_type:string",
+          "pages:int",
+          "published_at:localdatetime",
+          "retrieved_at:localdatetime",
+          "parse_status:string",
+          "kind:string",
+          "rows:int",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "source_code": "string",
+        "title": "string",
+        "object_key": "string",
+        "parsed_key": "string",
+        "mime_type": "string",
+        "pages": "int",
+        "published_at": "localdatetime",
+        "retrieved_at": "localdatetime",
+        "parse_status": "string",
+        "kind": "string",
+        "rows": "int",
+        "_origin": "string"
+      }
+    },
+    "DubaipulseDataset": {
+      "id": "slug",
+      "parts": {
+        "DubaipulseDataset__dubaipulse_dataset": [
+          "slug:ID(DubaipulseDataset)",
+          "scope:string",
+          "org:string",
+          "prefer_csv:boolean",
+          "cadence_cron:string",
+          "target_table:string",
+          "target_group:string",
+          "verified:boolean",
+          "last_fetched_at:datetime",
+          "last_status:string",
+          "last_rows:int",
+          "next_expected_release:datetime",
+          "last_error:string",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "slug": "id",
+        "scope": "string",
+        "org": "string",
+        "prefer_csv": "boolean",
+        "cadence_cron": "string",
+        "target_table": "string",
+        "target_group": "string",
+        "verified": "boolean",
+        "last_fetched_at": "datetime",
+        "last_status": "string",
+        "last_rows": "int",
+        "next_expected_release": "datetime",
+        "last_error": "string",
+        "_origin": "string"
+      }
+    },
+    "ForecastPoint": {
+      "id": "id",
+      "parts": {
+        "ForecastPoint__forecast_point": [
+          "id:ID(ForecastPoint)",
+          "run_id:string",
+          "kpi_code:string",
+          "geo:string",
+          "period:localdatetime",
+          "value:float",
+          "lower:float",
+          "upper:float",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "run_id": "string",
+        "kpi_code": "string",
+        "geo": "string",
+        "period": "localdatetime",
+        "value": "float",
+        "lower": "float",
+        "upper": "float",
+        "_origin": "string"
+      }
+    },
+    "ForecastRun": {
+      "id": "id",
+      "parts": {
+        "ForecastRun__forecast_run": [
+          "id:ID(ForecastRun)",
+          "model_code:string",
+          "scenario:string",
+          "assumptions:string",
+          "levers:string",
+          "signal_ids:string[]",
+          "inputs_hash:string",
+          "artefact_key:string",
+          "notes:string",
+          "status:string",
+          "created_by_id:string",
+          "created_at:localdatetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "model_code": "string",
+        "scenario": "string",
+        "assumptions": "string",
+        "levers": "string",
+        "signal_ids": "string[]",
+        "inputs_hash": "string",
+        "artefact_key": "string",
+        "notes": "string",
+        "status": "string",
+        "created_by_id": "string",
+        "created_at": "localdatetime",
+        "_origin": "string"
+      }
+    },
+    "Dataset": {
+      "id": "id",
+      "parts": {
+        "Dataset__gold_dataset": [
+          "id:ID(Dataset)",
+          "table_name:string",
+          "source_code:string",
+          "title:string",
+          "kpi_codes:string[]",
+          "row_count:int",
+          "geo_count:int",
+          "period_min:localdatetime",
+          "period_max:localdatetime",
+          "silver_object_key:string",
+          "run_id:string",
+          "built_at:localdatetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "table_name": "string",
+        "source_code": "string",
+        "title": "string",
+        "kpi_codes": "string[]",
+        "row_count": "int",
+        "geo_count": "int",
+        "period_min": "localdatetime",
+        "period_max": "localdatetime",
+        "silver_object_key": "string",
+        "run_id": "string",
+        "built_at": "localdatetime",
+        "_origin": "string"
+      }
+    },
+    "IngestRun": {
+      "id": "id",
+      "parts": {
+        "IngestRun__ingest_run": [
+          "id:ID(IngestRun)",
+          "source_code:string",
+          "mode:string",
+          "trigger:string",
+          "since:localdatetime",
+          "status:string",
+          "started_at:localdatetime",
+          "finished_at:localdatetime",
+          "rows_fetched:int",
+          "rows_inserted:int",
+          "rows_updated:int",
+          "rows_revised:int",
+          "raw_object_keys:string[]",
+          "warnings:string[]",
+          "error:string",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "source_code": "string",
+        "mode": "string",
+        "trigger": "string",
+        "since": "localdatetime",
+        "status": "string",
+        "started_at": "localdatetime",
+        "finished_at": "localdatetime",
+        "rows_fetched": "int",
+        "rows_inserted": "int",
+        "rows_updated": "int",
+        "rows_revised": "int",
+        "raw_object_keys": "string[]",
+        "warnings": "string[]",
+        "error": "string",
+        "_origin": "string"
+      }
+    },
+    "Kpi": {
+      "id": "code",
+      "parts": {
+        "Kpi__kpi": [
+          "code:ID(Kpi)",
+          "name:string",
+          "unit:string",
+          "frequency:string",
+          "category:string",
+          "description:string",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "code": "id",
+        "name": "string",
+        "unit": "string",
+        "frequency": "string",
+        "category": "string",
+        "description": "string",
+        "_origin": "string"
+      }
+    },
+    "KpiObservation": {
+      "id": "id",
+      "parts": {
+        "KpiObservation__kpi_observation": [
+          "id:ID(KpiObservation)",
+          "kpi_code:string",
+          "geo:string",
+          "period:localdatetime",
+          "value:float",
+          "unit:string",
+          "source_code:string",
+          "document_id:string",
+          "page:int",
+          "confidence:float",
+          "retrieved_at:localdatetime",
+          "validated:boolean",
+          "note:string",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "kpi_code": "string",
+        "geo": "string",
+        "period": "localdatetime",
+        "value": "float",
+        "unit": "string",
+        "source_code": "string",
+        "document_id": "string",
+        "page": "int",
+        "confidence": "float",
+        "retrieved_at": "localdatetime",
+        "validated": "boolean",
+        "note": "string",
+        "_origin": "string"
+      }
+    },
+    "KpiObservationRevision": {
+      "id": "id",
+      "parts": {
+        "KpiObservationRevision__kpi_observation_revision": [
+          "id:ID(KpiObservationRevision)",
+          "kpi_code:string",
+          "geo:string",
+          "period:localdatetime",
+          "source_code:string",
+          "old_value:float",
+          "new_value:float",
+          "old_retrieved_at:localdatetime",
+          "run_id:string",
+          "revised_at:localdatetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "kpi_code": "string",
+        "geo": "string",
+        "period": "localdatetime",
+        "source_code": "string",
+        "old_value": "float",
+        "new_value": "float",
+        "old_retrieved_at": "localdatetime",
+        "run_id": "string",
+        "revised_at": "localdatetime",
+        "_origin": "string"
+      }
+    },
+    "ModelVersion": {
+      "id": "model_version_id",
+      "parts": {
+        "ModelVersion__model_version": [
+          "model_version_id:ID(ModelVersion)",
+          "code:string",
+          "version:string",
+          "config_name:string",
+          "config_json:string",
+          "label:string",
+          "created_at:localdatetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "model_version_id": "id",
+        "code": "string",
+        "version": "string",
+        "config_name": "string",
+        "config_json": "string",
+        "label": "string",
+        "created_at": "localdatetime",
+        "_origin": "string"
+      }
+    },
+    "RashidAnalysis": {
+      "id": "news_id",
+      "parts": {
+        "RashidAnalysis__rashid_analysis": [
+          "news_id:ID(RashidAnalysis)",
+          "signal_id:string",
+          "decision:string",
+          "rationale:string",
+          "impact_aed_bn:float",
+          "impact_explanation:string",
+          "corrective_measures:string",
+          "evidence_md:string",
+          "model:string",
+          "created_at:localdatetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "news_id": "id",
+        "signal_id": "string",
+        "decision": "string",
+        "rationale": "string",
+        "impact_aed_bn": "float",
+        "impact_explanation": "string",
+        "corrective_measures": "string",
+        "evidence_md": "string",
+        "model": "string",
+        "created_at": "localdatetime",
+        "_origin": "string"
+      }
+    },
+    "Scenario": {
+      "id": "scenario_id",
+      "parts": {
+        "Scenario__scenario": [
+          "scenario_id:ID(Scenario)",
+          "code:string",
+          "name:string",
+          "description:string",
+          "created_at:localdatetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "scenario_id": "id",
+        "code": "string",
+        "name": "string",
+        "description": "string",
+        "created_at": "localdatetime",
+        "_origin": "string"
+      }
+    },
+    "Signal": {
+      "id": "id",
+      "parts": {
+        "Signal__signal": [
+          "id:ID(Signal)",
+          "headline:string",
+          "source_url:string",
+          "source_name:string",
+          "published_at:localdatetime",
+          "sector:string",
+          "status:string",
+          "analysis:string",
+          "revenue_impact_aed_bn:float",
+          "expenditure_impact_aed_bn:float",
+          "d33_objective:string",
+          "d33_impact_score:float",
+          "confidence:float",
+          "horizon_years:int",
+          "document_id:string",
+          "reviewed_by_id:string",
+          "created_at:localdatetime",
+          "rule_impact_aed_bn:float",
+          "engine_preset:string",
+          "pinned_vintage:string",
+          "engine_run_id:string",
+          "engine_run_state:string",
+          "engine_impact_aed_bn:float",
+          "assessed_at:datetime",
+          "ssot_market_news_id:string",
+          "promoted_by:string",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "headline": "string",
+        "source_url": "string",
+        "source_name": "string",
+        "published_at": "localdatetime",
+        "sector": "string",
+        "status": "string",
+        "analysis": "string",
+        "revenue_impact_aed_bn": "float",
+        "expenditure_impact_aed_bn": "float",
+        "d33_objective": "string",
+        "d33_impact_score": "float",
+        "confidence": "float",
+        "horizon_years": "int",
+        "document_id": "string",
+        "reviewed_by_id": "string",
+        "created_at": "localdatetime",
+        "rule_impact_aed_bn": "float",
+        "engine_preset": "string",
+        "pinned_vintage": "string",
+        "engine_run_id": "string",
+        "engine_run_state": "string",
+        "engine_impact_aed_bn": "float",
+        "assessed_at": "datetime",
+        "ssot_market_news_id": "string",
+        "promoted_by": "string",
+        "_origin": "string"
+      }
+    },
+    "SignalTrainingExample": {
+      "id": "id",
+      "parts": {
+        "SignalTrainingExample__signal_training_example": [
+          "id:ID(SignalTrainingExample)",
+          "news_id:string",
+          "headline:string",
+          "lede:string",
+          "source_name:string",
+          "category:string",
+          "sector:string",
+          "direction:string",
+          "label:string",
+          "rationale:string",
+          "created_by_id:string",
+          "created_at:localdatetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "news_id": "string",
+        "headline": "string",
+        "lede": "string",
+        "source_name": "string",
+        "category": "string",
+        "sector": "string",
+        "direction": "string",
+        "label": "string",
+        "rationale": "string",
+        "created_by_id": "string",
+        "created_at": "localdatetime",
+        "_origin": "string"
+      }
+    },
+    "Source": {
+      "id": "code",
+      "parts": {
+        "Source__source": [
+          "code:ID(Source)",
+          "name:string",
+          "kind:string",
+          "url:string",
+          "licence:string",
+          "refresh:string",
+          "cadence_cron:string",
+          "description:string",
+          "enabled:boolean",
+          "history_from:int",
+          "last_error:string",
+          "last_fetched_at:localdatetime",
+          "last_rows:int",
+          "last_status:string",
+          "next_expected_release:localdatetime",
+          "tier:string",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "code": "id",
+        "name": "string",
+        "kind": "string",
+        "url": "string",
+        "licence": "string",
+        "refresh": "string",
+        "cadence_cron": "string",
+        "description": "string",
+        "enabled": "boolean",
+        "history_from": "int",
+        "last_error": "string",
+        "last_fetched_at": "localdatetime",
+        "last_rows": "int",
+        "last_status": "string",
+        "next_expected_release": "localdatetime",
+        "tier": "string",
+        "_origin": "string"
+      }
+    },
+    "User": {
+      "id": "id",
+      "parts": {
+        "User__user": [
+          "id:ID(User)",
+          "email:string",
+          "name:string",
+          "role:string",
+          "created_at:localdatetime",
+          "password_hash:string",
+          "is_active:boolean",
+          "last_login_at:localdatetime",
+          "_origin:string"
+        ]
+      },
+      "properties": {
+        "id": "id",
+        "email": "string",
+        "name": "string",
+        "role": "string",
+        "created_at": "localdatetime",
+        "password_hash": "string",
+        "is_active": "boolean",
+        "last_login_at": "localdatetime",
+        "_origin": "string"
+      }
+    },
+    "Country": {
+      "id": "code",
+      "parts": {
+        "Country__derived": [
+          "code:ID(Country)"
+        ]
+      },
+      "properties": {
+        "code": "id"
+      }
+    }
+  },
+  "relationships": {
+    "FOR_CODE__DeScenarioDriverValue__DeScenarioDriver": {
+      "type": "FOR_CODE",
+      "start": "DeScenarioDriverValue",
+      "end": "DeScenarioDriver",
+      "header": [
+        ":START_ID(DeScenarioDriverValue)",
+        ":END_ID(DeScenarioDriver)"
+      ]
+    },
+    "FOR_DRIVER__DeScenarioElasticity__DeScenarioDriver": {
+      "type": "FOR_DRIVER",
+      "start": "DeScenarioElasticity",
+      "end": "DeScenarioDriver",
+      "header": [
+        ":START_ID(DeScenarioElasticity)",
+        ":END_ID(DeScenarioDriver)"
+      ]
+    },
+    "FOR_ENGINE_RUN__FiscalForecastRun__ScenarioEngineRun": {
+      "type": "FOR_ENGINE_RUN",
+      "start": "FiscalForecastRun",
+      "end": "ScenarioEngineRun",
+      "header": [
+        ":START_ID(FiscalForecastRun)",
+        ":END_ID(ScenarioEngineRun)"
+      ]
+    },
+    "FOR_COUNTRY__Series__Country": {
+      "type": "FOR_COUNTRY",
+      "start": "Series",
+      "end": "Country",
+      "header": [
+        ":START_ID(Series)",
+        ":END_ID(Country)"
+      ]
+    },
+    "FOR_WORLD_RUN__PolicySimTerm__ScenarioEngineRun": {
+      "type": "FOR_WORLD_RUN",
+      "start": "PolicySimTerm",
+      "end": "ScenarioEngineRun",
+      "header": [
+        ":START_ID(PolicySimTerm)",
+        ":END_ID(ScenarioEngineRun)"
+      ]
+    },
+    "FOR_SUPERSEDES_RUN__ScenarioEngineRun__ScenarioEngineRun": {
+      "type": "FOR_SUPERSEDES_RUN",
+      "start": "ScenarioEngineRun",
+      "end": "ScenarioEngineRun",
+      "header": [
+        ":START_ID(ScenarioEngineRun)",
+        ":END_ID(ScenarioEngineRun)"
+      ]
+    },
+    "FOR_COUNTRY__SsotCountryMacro__Country": {
+      "type": "FOR_COUNTRY",
+      "start": "SsotCountryMacro",
+      "end": "Country",
+      "header": [
+        ":START_ID(SsotCountryMacro)",
+        ":END_ID(Country)"
+      ]
+    },
+    "FOR_INSTRUMENT__SsotMarketQuote__SsotMarketInstrument": {
+      "type": "FOR_INSTRUMENT",
+      "start": "SsotMarketQuote",
+      "end": "SsotMarketInstrument",
+      "header": [
+        ":START_ID(SsotMarketQuote)",
+        ":END_ID(SsotMarketInstrument)"
+      ]
+    },
+    "FOR_INSTRUMENT__Series__SsotMarketInstrument": {
+      "type": "FOR_INSTRUMENT",
+      "start": "Series",
+      "end": "SsotMarketInstrument",
+      "header": [
+        ":START_ID(Series)",
+        ":END_ID(SsotMarketInstrument)"
+      ]
+    },
+    "FOR_CYCLE__BspStage__BspCycle": {
+      "type": "FOR_CYCLE",
+      "start": "BspStage",
+      "end": "BspCycle",
+      "header": [
+        ":START_ID(BspStage)",
+        ":END_ID(BspCycle)"
+      ]
+    },
+    "FOR_LINE__LineSourceMap__Line": {
+      "type": "FOR_LINE",
+      "start": "LineSourceMap",
+      "end": "Line",
+      "header": [
+        ":START_ID(LineSourceMap)",
+        ":END_ID(Line)"
+      ]
+    },
+    "FOR_SOURCE__Document__Source": {
+      "type": "FOR_SOURCE",
+      "start": "Document",
+      "end": "Source",
+      "header": [
+        ":START_ID(Document)",
+        ":END_ID(Source)"
+      ]
+    },
+    "FOR_KPI__ForecastPoint__Kpi": {
+      "type": "FOR_KPI",
+      "start": "ForecastPoint",
+      "end": "Kpi",
+      "header": [
+        ":START_ID(ForecastPoint)",
+        ":END_ID(Kpi)"
+      ]
+    },
+    "FOR_RUN__ForecastPoint__ForecastRun": {
+      "type": "FOR_RUN",
+      "start": "ForecastPoint",
+      "end": "ForecastRun",
+      "header": [
+        ":START_ID(ForecastPoint)",
+        ":END_ID(ForecastRun)"
+      ]
+    },
+    "FOR_COUNTRY__ForecastPoint__Country": {
+      "type": "FOR_COUNTRY",
+      "start": "ForecastPoint",
+      "end": "Country",
+      "header": [
+        ":START_ID(ForecastPoint)",
+        ":END_ID(Country)"
+      ]
+    },
+    "FOR_SOURCE__Dataset__Source": {
+      "type": "FOR_SOURCE",
+      "start": "Dataset",
+      "end": "Source",
+      "header": [
+        ":START_ID(Dataset)",
+        ":END_ID(Source)"
+      ]
+    },
+    "FOR_SOURCE__IngestRun__Source": {
+      "type": "FOR_SOURCE",
+      "start": "IngestRun",
+      "end": "Source",
+      "header": [
+        ":START_ID(IngestRun)",
+        ":END_ID(Source)"
+      ]
+    },
+    "FOR_KPI__KpiObservation__Kpi": {
+      "type": "FOR_KPI",
+      "start": "KpiObservation",
+      "end": "Kpi",
+      "header": [
+        ":START_ID(KpiObservation)",
+        ":END_ID(Kpi)"
+      ]
+    },
+    "FOR_SOURCE__KpiObservation__Source": {
+      "type": "FOR_SOURCE",
+      "start": "KpiObservation",
+      "end": "Source",
+      "header": [
+        ":START_ID(KpiObservation)",
+        ":END_ID(Source)"
+      ]
+    },
+    "FOR_COUNTRY__KpiObservation__Country": {
+      "type": "FOR_COUNTRY",
+      "start": "KpiObservation",
+      "end": "Country",
+      "header": [
+        ":START_ID(KpiObservation)",
+        ":END_ID(Country)"
+      ]
+    },
+    "FOR_KPI__KpiObservationRevision__Kpi": {
+      "type": "FOR_KPI",
+      "start": "KpiObservationRevision",
+      "end": "Kpi",
+      "header": [
+        ":START_ID(KpiObservationRevision)",
+        ":END_ID(Kpi)"
+      ]
+    },
+    "FOR_SOURCE__KpiObservationRevision__Source": {
+      "type": "FOR_SOURCE",
+      "start": "KpiObservationRevision",
+      "end": "Source",
+      "header": [
+        ":START_ID(KpiObservationRevision)",
+        ":END_ID(Source)"
+      ]
+    },
+    "FOR_COUNTRY__KpiObservationRevision__Country": {
+      "type": "FOR_COUNTRY",
+      "start": "KpiObservationRevision",
+      "end": "Country",
+      "header": [
+        ":START_ID(KpiObservationRevision)",
+        ":END_ID(Country)"
+      ]
+    },
+    "FOR_SIGNAL__RashidAnalysis__Signal": {
+      "type": "FOR_SIGNAL",
+      "start": "RashidAnalysis",
+      "end": "Signal",
+      "header": [
+        ":START_ID(RashidAnalysis)",
+        ":END_ID(Signal)"
+      ]
+    },
+    "FOR_SSOT_MARKET_NEWS__Signal__SsotMarketNews": {
+      "type": "FOR_SSOT_MARKET_NEWS",
+      "start": "Signal",
+      "end": "SsotMarketNews",
+      "header": [
+        ":START_ID(Signal)",
+        ":END_ID(SsotMarketNews)"
+      ]
+    }
+  }
+}

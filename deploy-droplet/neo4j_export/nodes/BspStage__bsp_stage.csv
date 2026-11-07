@@ -1,0 +1,5 @@
+58a0d252-974b-4b09-8c0c-ecc2c2dcf8a4,eb8f4071-7c00-43fc-b0aa-bdac7fc32c99,1,Request indicators,M1,2027-01-31T00:00:00,FSPD,NOT_STARTED,Application 1,0,public.bsp_stage
+0d83db64-0bdd-4eb1-a7c2-db1090844142,eb8f4071-7c00-43fc-b0aa-bdac7fc32c99,2,Provide indicators; approve,M2,2027-02-15T00:00:00,FASS,NOT_STARTED,Application 2,0,public.bsp_stage
+df76621d-4d7c-459b-9acb-bb2229559e1c,eb8f4071-7c00-43fc-b0aa-bdac7fc32c99,3,Prepare financial plan,M3,2027-03-10T00:00:00,FASS,NOT_STARTED,Application 4;Application 5,0,public.bsp_stage
+c0aac954-e98f-42e0-88a8-f63e99c92cd3,eb8f4071-7c00-43fc-b0aa-bdac7fc32c99,4,Draft framework & analyse scenarios,M4,2027-04-09T00:00:00,FSPD,NOT_STARTED,,0,public.bsp_stage
+d50162e7-d655-48dd-a934-2fe135d99161,eb8f4071-7c00-43fc-b0aa-bdac7fc32c99,5,Review & final approval,M5,2027-04-20T00:00:00,DG,NOT_STARTED,,0,public.bsp_stage

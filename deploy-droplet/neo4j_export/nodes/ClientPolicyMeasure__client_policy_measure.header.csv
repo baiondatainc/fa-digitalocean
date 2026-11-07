@@ -1,0 +1,1 @@
+id:ID(ClientPolicyMeasure),environment_id:string,measure_id:string,description:string,enabled_default:boolean,intro_year:int,yields:string,source_file:string,loaded_at:datetime,_origin:string

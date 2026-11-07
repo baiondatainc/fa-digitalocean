@@ -1,0 +1,18 @@
+0,CIT OECD IA,OECD CIT 15 % on large MNCs,Corporate tax,15 %,Large multinationals,2023,true,gold.de_measure
+1,CIT expanded IA,CIT 9 % on other firms and SMEs,Corporate tax,9 %,All other firms,2023,true,gold.de_measure
+2,Housing rental fee IA,Housing rental fee to 6 % (non-Emiratis),Property & market fees,,,2025,false,gold.de_measure
+3,Market fee IA,Market fee to 5 %,Property & market fees,,,2025,false,gold.de_measure
+4,Property sale and registration IA,Property registration fee to 5 %,Property & market fees,,,2025,false,gold.de_measure
+5,Fuel duty IA,Fuel duty AED 0.20 per litre,Consumption taxes,,,2025,false,gold.de_measure
+6,Vehicle registration duty IA,Vehicle registration duty +AED 500 a year,Transport,,,2025,false,gold.de_measure
+7,Electricity levy_hh_Expats IA,"Electricity levy, expat households",Utility levies,,,2025,false,gold.de_measure
+8,Water levy_hh_Expats IA,"Water levy, expat households",Utility levies,,,2025,false,gold.de_measure
+9,Electricity levy_hh_Locals IA,"Electricity levy, national households",Utility levies,,,2025,false,gold.de_measure
+10,Water levy_hh_Locals IA,"Water levy, national households",Utility levies,,,2025,false,gold.de_measure
+11,Electricity levy_commercial IA,"Electricity levy, commercial & industrial",Utility levies,,,2025,false,gold.de_measure
+12,Water levy_commercial IA,"Water levy, commercial & industrial",Utility levies,,,2025,false,gold.de_measure
+13,Plastic packaging tax IA,Plastic packaging tax AED 500 per tonne,Environmental,,,2025,false,gold.de_measure
+14,Plastic bag tax IA,Plastic bag charge AED 0.50,Environmental,,,2025,false,gold.de_measure
+15,Employment charge IA,Charge on employment income 1 %,Employment charge,,,2025,false,gold.de_measure
+16,VAT top-up IA,VAT top-up 1 pp (to 6 %),Consumption taxes,,,2025,false,gold.de_measure
+17,Excise tax expansion IA,Excise on sugar products 50 %,Consumption taxes,,,2025,false,gold.de_measure

@@ -1,0 +1,1 @@
+id:ID(ForecastRun),model_code:string,scenario:string,assumptions:string,levers:string,signal_ids:string[],inputs_hash:string,artefact_key:string,notes:string,status:string,created_by_id:string,created_at:localdatetime,_origin:string

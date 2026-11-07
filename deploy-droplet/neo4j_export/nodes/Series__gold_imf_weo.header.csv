@@ -1,0 +1,1 @@
+series_id:ID(Series),table:string,measure:string,country_code:string,economy_group:string,n_points:int,first_period:string,last_period:string,latest_value:float,min_value:float,max_value:float,mean_value:float,has_points:boolean,periods:string[],values:float[],_origin:string

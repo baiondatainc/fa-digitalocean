@@ -1,0 +1,1 @@
+id:ID(PrismaMigrations),checksum:string,finished_at:datetime,migration_name:string,logs:string,rolled_back_at:datetime,started_at:datetime,applied_steps_count:int,_origin:string

@@ -1,0 +1,1 @@
+iso3:ID(SsotCountryMacro),country:string,gdp_usd_bn:float,gdp_growth_pct:float,interest_rate_pct:float,inflation_rate_pct:float,jobless_rate_pct:float,gov_budget_pct_gdp:float,debt_pct_gdp:float,current_account_pct_gdp:float,population_mn:float,asof:date,provenance:string,retrieved_at:datetime,_origin:string

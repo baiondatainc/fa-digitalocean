@@ -1,0 +1,1 @@
+id:ID(KpiObservation),kpi_code:string,geo:string,period:localdatetime,value:float,unit:string,source_code:string,document_id:string,page:int,confidence:float,retrieved_at:localdatetime,validated:boolean,note:string,_origin:string

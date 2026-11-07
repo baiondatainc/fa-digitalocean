@@ -1,0 +1,11 @@
+BRENT,Brent crude,LEADING,Leading,weekly–quarterly, $/bbl, $/bbl,0,30.0,150.0,1.0,false,0,,,,identity,,gold.de_scenario_driver
+USFED,US policy rate (AED peg pass-through),LEADING,Leading,weekly–quarterly,%, pp,2,0.0,8.0,0.25,false,1,,,,identity,,gold.de_scenario_driver
+DXY,US dollar index (DXY),LEADING,Leading,weekly–quarterly,,,1,80.0,120.0,0.5,false,2,,,,identity,,gold.de_scenario_driver
+PMI,Dubai PMI,LEADING,Leading,weekly–quarterly,, pts,1,40.0,65.0,0.1,false,3,,,,identity,,gold.de_scenario_driver
+TOUR,"Tourism arrivals, y/y",COINCIDENT,Coincident,monthly,%, pp,1,-30.0,30.0,0.5,false,4,,,,identity,,gold.de_scenario_driver
+NOGDP,Non-oil partner GDP growth,COINCIDENT,Coincident,monthly,%, pp,1,-4.0,8.0,0.1,false,5,,,,identity,,gold.de_scenario_driver
+RETXN,"Real-estate transactions, y/y",COINCIDENT,Coincident,monthly,%, pp,0,-40.0,60.0,1.0,false,6,,,,identity,,gold.de_scenario_driver
+DNOIL,Dubai non-oil real GDP growth,LAGGING,Lagging,quarterly,%, pp,1,-2.0,8.0,0.1,false,7,,,,identity,,gold.de_scenario_driver
+EMP,Dubai employment growth,LAGGING,Lagging,quarterly,%, pp,1,-2.0,6.0,0.1,false,8,,,,identity,,gold.de_scenario_driver
+VAT,VAT standard rate,POLICY,Policy,set by law,%, pp,1,5.0,10.0,0.5,true,9,,,,identity,,gold.de_scenario_driver
+CIT,Corporate tax rate,POLICY,Policy,set by law,%, pp,0,0.0,25.0,1.0,true,10,,,,identity,,gold.de_scenario_driver

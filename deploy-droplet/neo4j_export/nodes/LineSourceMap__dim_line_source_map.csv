@@ -1,0 +1,47 @@
+6f2ec0ac-d0a2-485a-a126-4040927bdfb8,dxb_revenue_by_line_2019_2024,Custom duties,customs_duty,,public.dim_line_source_map
+11040ba8-dd8e-422b-a5e5-e59a63262356,dxb_revenue_by_line_2019_2024,Customs admin fees,customs_duty,,public.dim_line_source_map
+63acd94c-ae69-46aa-829e-a301b4bac9f4,dxb_revenue_by_line_2019_2024,VAT,vat_excise,,public.dim_line_source_map
+4282a57d-c68a-4264-97a5-7ffca8001de5,dxb_revenue_by_line_2019_2024,VAT leakage (digital),SKIP,Reported separately; never aggregated to MAIN block,public.dim_line_source_map
+d5ac066f-2514-45fc-ad91-27f559910204,dxb_revenue_by_line_2019_2024,Net VAT (incld. Leakage from digital),SKIP,Reported separately; never aggregated to MAIN block,public.dim_line_source_map
+3c7a1f9b-bce1-490a-9f50-d0c731e1c826,dxb_revenue_by_line_2019_2024,Excise tax,vat_excise,,public.dim_line_source_map
+ec463c05-b52b-45e0-8bb1-9eb26bcdc7c7,dxb_revenue_by_line_2019_2024,Tax on Alcoholic Beverages,vat_excise,,public.dim_line_source_map
+4ed9288b-47e7-4c2b-bcd7-941651c508a0,dxb_revenue_by_line_2019_2024,Oil Revenue,oil_revenue,,public.dim_line_source_map
+61833291-26fa-47a2-97ce-3a0b178fe265,dxb_revenue_by_line_2019_2024,Interest revenue,enterprise_profits,Non-operating income aggregated to Enterprise Profits per DoF taxonomy,public.dim_line_source_map
+ff6419ec-028c-4eed-a02e-6018882ca610,dxb_revenue_by_line_2019_2024,Entreprise profits,enterprise_profits,Source misspelling retained verbatim,public.dim_line_source_map
+b370aec5-e521-45a7-ac22-6cc4b07f8c34,dxb_revenue_by_line_2019_2024,Exchange Rate Gain / Loss,enterprise_profits,,public.dim_line_source_map
+da2ab624-12a1-4400-926d-06cf9c23bea4,dxb_revenue_by_line_2019_2024,Surplus and Deficit General Account,enterprise_profits,,public.dim_line_source_map
+74de5036-87bf-47fc-8499-dc30625a8b1b,dxb_revenue_by_line_2019_2024,Corporate income tax,bank_taxes,Applies to banks under the current regime,public.dim_line_source_map
+b497672c-a1d1-42e7-8879-5d29dc66ab4a,dxb_revenue_by_line_2019_2024,Foreign bank tax,bank_taxes,,public.dim_line_source_map
+672dc46f-a097-40c8-8478-d571bc7a9d2e,dxb_revenue_by_line_2019_2024,DTCM Tourism dirham,fees_charges,,public.dim_line_source_map
+e15fa350-978c-4ce9-ad49-0b756616e83a,dxb_revenue_by_line_2019_2024,Knowledge fee,fees_charges,,public.dim_line_source_map
+8e963287-3ea6-4b64-bc67-5cb465e06077,dxb_revenue_by_line_2019_2024,Revenue from Sale of land,other_nontax,,public.dim_line_source_map
+8fe7ee8d-08bb-44aa-8b7c-0501ff633939,dxb_revenue_by_line_2019_2024,Revenue from Sale of Properties,other_nontax,,public.dim_line_source_map
+e42d5ffa-84e4-4c05-99f4-575b84ec2c96,dxb_revenue_by_line_2019_2024,Revenue from Sale of Fixed Assets,other_nontax,,public.dim_line_source_map
+13f7f1e8-cacc-4c07-8390-9e8fa4bc3579,dxb_revenue_by_line_2019_2024,Grants and Donations,other_nontax,,public.dim_line_source_map
+d44f5fca-8e5a-4616-8331-42d5487b2665,dxb_revenue_by_line_2019_2024,Other Non Current Revenue,other_nontax,,public.dim_line_source_map
+7d1523bf-b499-4849-94dc-d841a4c1704c,dxb_revenue_by_line_2019_2024,Proceeds - Fixed Asset Disposal,other_nontax,,public.dim_line_source_map
+07f71ae9-7805-4881-8c1a-d460f183e608,dxb_revenue_by_line_2019_2024,Employee Salary Deduction,other_nontax,,public.dim_line_source_map
+ceb05738-9f1d-4b21-b8bc-0379c01c8a4f,dxb_revenue_by_line_2019_2024,Competitively Priced Services (excl. DCAA passenger service charge),fees_charges,,public.dim_line_source_map
+ecb314b3-cc29-473f-9b73-d50f0055e32e,dxb_revenue_by_line_2019_2024,DCAA passenger service charge,fees_charges,,public.dim_line_source_map
+5a1b6c8c-637c-4478-be38-dfb4c710958a,dxb_revenue_by_line_2019_2024,Tariffs on noncompetitive services (excl. salik),fees_charges,,public.dim_line_source_map
+b7aebdd0-9e31-43f9-a75d-7a78146cf4dc,dxb_revenue_by_line_2019_2024,Salik fees,fees_charges,,public.dim_line_source_map
+6c93b9b5-44a3-4d2e-a385-63bdd9b144fd,dxb_revenue_by_line_2019_2024,Sales of Goods and Services,other_nontax,,public.dim_line_source_map
+13177946-9dd9-47e6-a5f7-8c5fc268722b,dxb_revenue_by_line_2019_2024,"Total Admin (excl. DLD, Customs and VRD)",SKIP,Subtotal — components below,public.dim_line_source_map
+d3c1a8f9-0cc7-47f7-b788-191552ebef7f,dxb_revenue_by_line_2019_2024,Licenses (excl. VRD),fees_charges,,public.dim_line_source_map
+aac8b3a6-2b56-420e-ad58-237b9ff8578f,dxb_revenue_by_line_2019_2024,Vehicle registration duty,fees_charges,,public.dim_line_source_map
+da5d0a53-7785-4f97-b9cf-81f778cf9f91,dxb_revenue_by_line_2019_2024,Permits,fees_charges,,public.dim_line_source_map
+ab5a59c9-ea0e-409a-b231-8c8a27507d90,dxb_revenue_by_line_2019_2024,Certificates,fees_charges,,public.dim_line_source_map
+b8ca5c4c-00c8-49a6-97eb-17151a9e9fc1,dxb_revenue_by_line_2019_2024,Subscriptions,fees_charges,,public.dim_line_source_map
+e7965684-da56-4a90-a9c9-fec3849dd2fe,dxb_revenue_by_line_2019_2024,Legal Fees,fees_charges,,public.dim_line_source_map
+213a6e41-bb65-437c-9e97-ae2d7d1f14fa,dxb_revenue_by_line_2019_2024,Other Administrative Fees (excl. DLD and customs),fees_charges,,public.dim_line_source_map
+bcfd9447-eebf-41a6-9031-3842f2cd66d9,dxb_revenue_by_line_2019_2024,Property sale and registration fees (DLD fees),fees_charges,DLD property registration fees,public.dim_line_source_map
+11860401-45d9-452f-ab53-0a73d3b353a1,dxb_revenue_by_line_2019_2024,Mortgage fees (DLD fees),fees_charges,DLD mortgage fees,public.dim_line_source_map
+114f713b-5982-494a-a143-c509feee503f,dxb_revenue_by_line_2019_2024,Fees on Revenue from Hotels & Entertainment Establishments,fees_charges,,public.dim_line_source_map
+2cd4943a-6f89-494e-8b18-241ad00513b8,dxb_revenue_by_line_2019_2024,Housing & Commercial fees,SKIP,Subtotal — components below,public.dim_line_source_map
+a5ce32d4-c974-44a6-9162-cbd2b42d0a47,dxb_revenue_by_line_2019_2024,Housing fee,fees_charges,,public.dim_line_source_map
+69c00c51-cbee-47b2-959b-e9e3d9220352,dxb_revenue_by_line_2019_2024,Labour accommodation fees (and others),fees_charges,,public.dim_line_source_map
+201175bc-03b5-4247-a974-fe28aec59443,dxb_revenue_by_line_2019_2024,Market fee,fees_charges,,public.dim_line_source_map
+124b2d65-fa33-4705-ba46-48d1d1c3814f,dxb_revenue_by_line_2019_2024,Public Festival Reve,fees_charges,Verbatim name — source abbreviation,public.dim_line_source_map
+56e09c21-b8c6-4a51-a048-4e639113c917,dxb_revenue_by_line_2019_2024,Concessions Revenue,fees_charges,,public.dim_line_source_map
+72aaf3f6-a259-4de6-ac7f-22cf1c2ed8ef,dxb_revenue_by_line_2019_2024,All penalties,fees_charges,,public.dim_line_source_map
+a4213261-a440-4793-80cf-d7ea88342f8b,dxb_revenue_by_line_2019_2024,All rental revenue,fees_charges,,public.dim_line_source_map

@@ -1,0 +1,1 @@
+scenario_id:ID(Scenario),code:string,name:string,description:string,created_at:localdatetime,_origin:string

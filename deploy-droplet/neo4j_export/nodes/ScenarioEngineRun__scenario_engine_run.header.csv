@@ -1,0 +1,1 @@
+id:ID(ScenarioEngineRun),environment_id:string,config_version:string,model_id:string,preset_id:string,overrides:string,feedback_on:boolean,focus_year:int,output:string,inputs_hash:string,created_by:string,created_at:datetime,run_name:string,description:string,version_no:int,state:string,supersedes_run_id:string,vintages:string,_origin:string

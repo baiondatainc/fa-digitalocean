@@ -1,0 +1,1 @@
+id:ID(Dataset),table_name:string,source_code:string,title:string,kpi_codes:string[],row_count:int,geo_count:int,period_min:localdatetime,period_max:localdatetime,silver_object_key:string,run_id:string,built_at:localdatetime,_origin:string

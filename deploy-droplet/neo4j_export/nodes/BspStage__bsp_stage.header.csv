@@ -1,0 +1,1 @@
+id:ID(BspStage),cycle_id:string,number:int,name:string,milestone:string,due_at:localdatetime,owner:string,status:string,forms:string[],rework_loops:int,_origin:string

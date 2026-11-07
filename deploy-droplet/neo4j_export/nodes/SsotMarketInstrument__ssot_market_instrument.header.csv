@@ -1,0 +1,1 @@
+instrument_id:ID(SsotMarketInstrument),symbol:string,name:string,cls:string,country_iso3:string,publisher:string,publisher_code:string,currency:string,unit:string,active:boolean,created_at:datetime,updated_at:datetime,_origin:string

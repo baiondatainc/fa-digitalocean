@@ -1,0 +1,1 @@
+id:ID(BacktestRun),environment_id:string,config_version:string,target_id:string,variant_id:string,as_of_vintages:boolean,metrics:string,folds:string,portfolio:string,compare:string,inputs_hash:string,created_by:string,created_at:datetime,_origin:string

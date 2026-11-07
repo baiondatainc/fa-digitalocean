@@ -1,0 +1,1 @@
+id:ID(ScenarioEngineConfig),environment_id:string,version:string,schema_version:int,config:string,provenance:string,built_at:datetime,is_current:boolean,_origin:string

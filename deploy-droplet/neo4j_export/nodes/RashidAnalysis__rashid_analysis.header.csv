@@ -1,0 +1,1 @@
+news_id:ID(RashidAnalysis),signal_id:string,decision:string,rationale:string,impact_aed_bn:float,impact_explanation:string,corrective_measures:string,evidence_md:string,model:string,created_at:localdatetime,_origin:string

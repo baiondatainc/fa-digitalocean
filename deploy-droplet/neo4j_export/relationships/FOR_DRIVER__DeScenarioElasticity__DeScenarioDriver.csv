@@ -1,0 +1,22 @@
+Fees & Charges|DNOIL,DNOIL
+Fees & Charges|EMP,EMP
+Fees & Charges|NOGDP,NOGDP
+Fees & Charges|RETXN,RETXN
+Fees & Charges|TOUR,TOUR
+VAT & Excise Duty|DNOIL,DNOIL
+VAT & Excise Duty|TOUR,TOUR
+VAT & Excise Duty|VAT,VAT
+Enterprise Profits|BRENT,BRENT
+Enterprise Profits|USFED,USFED
+Enterprise Profits|NOGDP,NOGDP
+Enterprise Profits|DNOIL,DNOIL
+Enterprise Profits|CIT,CIT
+Customs Duty|NOGDP,NOGDP
+Customs Duty|TOUR,TOUR
+Oil Revenue|BRENT,BRENT
+Bank Taxes|USFED,USFED
+Bank Taxes|DNOIL,DNOIL
+Bank Taxes|CIT,CIT
+Other non-tax revenue|RETXN,RETXN
+Other non-tax revenue|PMI,PMI
+Other non-tax revenue|DNOIL,DNOIL

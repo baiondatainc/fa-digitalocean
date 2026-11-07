@@ -1,0 +1,1 @@
+id:ID(SsotMarketNews),headline:string,lede:string,body_md:string,asof:datetime,category:string,related_instruments:string[],image_url:string,source:string,source_url:string,agent_run_id:string,retrieved_at:datetime,_origin:string

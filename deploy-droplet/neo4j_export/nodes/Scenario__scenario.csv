@@ -1,0 +1,8 @@
+c5339d8f-87dc-46f7-bebc-e5ada98aeb0b,base,Base,DoF approved-budget trajectory; the reference run every other scenario compares against.,2026-11-06T04:45:49.247000,public.scenario
+1e903861-0d7a-429d-9f61-cad4b2afc046,optimistic,Optimistic,"Favourable drivers: higher Brent, stronger PMI, lower rates.",2026-11-06T04:45:49.247000,public.scenario
+35b1a3d1-b14b-4a1c-8881-6bf5e69d8f96,pessimistic,Pessimistic,"Adverse drivers: lower Brent, weaker PMI, higher rates.",2026-11-06T04:45:49.247000,public.scenario
+1e8d1891-b4ee-42bf-b752-5f170583fc2f,recession,Recession,Demand shock: PMI contraction and real-estate transactions down.,2026-11-06T04:45:49.247000,public.scenario
+719a90c4-f480-480b-b72a-ce608400f2ad,inflation,Inflation,Cost shock: higher CPI feed-through into non-oil nominal revenue.,2026-11-06T04:45:49.247000,public.scenario
+645a6589-c092-4108-b8d2-a6103f280619,oil,Oil shock,Brent → ~$120; lifts Oil Revenue via its 0.9 Brent elasticity.,2026-11-06T04:45:49.247000,public.scenario
+bcbd022a-e892-4ac3-88ac-a480ebe46656,trade,Trade shock,Global demand weakens; customs duty and VAT on imports down.,2026-11-06T04:45:49.247000,public.scenario
+c63bfce4-2221-4d9b-b78d-bbd58025ab06,live_agent,Live Agent,Latest-only live result written by fa-forecast-agent into gold.agent_live_run.,2026-11-06T04:45:49.247000,public.scenario

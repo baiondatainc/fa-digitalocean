@@ -1,0 +1,1 @@
+id:ID(ForecastPoint),run_id:string,kpi_code:string,geo:string,period:localdatetime,value:float,lower:float,upper:float,_origin:string

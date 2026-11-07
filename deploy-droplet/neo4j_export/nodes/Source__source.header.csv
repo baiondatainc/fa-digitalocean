@@ -1,0 +1,1 @@
+code:ID(Source),name:string,kind:string,url:string,licence:string,refresh:string,cadence_cron:string,description:string,enabled:boolean,history_from:int,last_error:string,last_fetched_at:localdatetime,last_rows:int,last_status:string,next_expected_release:localdatetime,tier:string,_origin:string

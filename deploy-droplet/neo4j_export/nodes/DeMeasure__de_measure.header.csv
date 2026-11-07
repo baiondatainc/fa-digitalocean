@@ -1,0 +1,1 @@
+measure_id:ID(DeMeasure),ia_name:string,short_name:string,family:string,rate:string,sector:string,start_year:int,default_on:boolean,_origin:string

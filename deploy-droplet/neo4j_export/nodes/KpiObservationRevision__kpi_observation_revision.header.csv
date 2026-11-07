@@ -1,0 +1,1 @@
+id:ID(KpiObservationRevision),kpi_code:string,geo:string,period:localdatetime,source_code:string,old_value:float,new_value:float,old_retrieved_at:localdatetime,run_id:string,revised_at:localdatetime,_origin:string

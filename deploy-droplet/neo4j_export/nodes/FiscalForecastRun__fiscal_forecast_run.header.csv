@@ -1,0 +1,1 @@
+id:ID(FiscalForecastRun),environment_id:string,config_version:string,preset_id:string,rules:string,macro:string,revenue:string,reconciliation:string,plan:string,inputs_hash:string,created_by:string,created_at:datetime,engine_run_id:string,vintages:string,_origin:string

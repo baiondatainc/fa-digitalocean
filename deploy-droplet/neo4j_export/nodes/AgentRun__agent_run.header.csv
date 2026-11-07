@@ -1,0 +1,1 @@
+id:ID(AgentRun),environment_id:string,trigger:string,inputs_hash:string,status:string,presets_written:int,llm_model:string,prompt_hash:string,tokens_in:int,tokens_out:int,error:string,started_at:datetime,finished_at:datetime,_origin:string

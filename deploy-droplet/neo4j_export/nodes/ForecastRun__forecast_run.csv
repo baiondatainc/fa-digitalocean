@@ -1,0 +1,1 @@
+5c5b6de2-1b54-449b-82c9-69a8a3890890,gdp-blend-v1,NORMAL,"{""currentYear"": 2026, ""horizonYears"": 4, ""observedQuartersInCurrentYear"": 2}",[],,gdp:2026:2:66,,ets w=0.42 mape=0.006; sarimax w=0.58 mape=0.005; horizon_q=18; observed_q=2,DONE,,2026-11-05T17:49:09.562000,public.forecast_run

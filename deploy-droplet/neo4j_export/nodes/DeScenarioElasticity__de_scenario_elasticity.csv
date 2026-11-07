@@ -1,0 +1,22 @@
+Fees & Charges|DNOIL,Fees & Charges,DNOIL,1.2,gold.de_scenario_elasticity
+Fees & Charges|EMP,Fees & Charges,EMP,0.3,gold.de_scenario_elasticity
+Fees & Charges|NOGDP,Fees & Charges,NOGDP,0.2,gold.de_scenario_elasticity
+Fees & Charges|RETXN,Fees & Charges,RETXN,0.05,gold.de_scenario_elasticity
+Fees & Charges|TOUR,Fees & Charges,TOUR,0.1,gold.de_scenario_elasticity
+VAT & Excise Duty|DNOIL,VAT & Excise Duty,DNOIL,0.8,gold.de_scenario_elasticity
+VAT & Excise Duty|TOUR,VAT & Excise Duty,TOUR,0.1,gold.de_scenario_elasticity
+VAT & Excise Duty|VAT,VAT & Excise Duty,VAT,1.0,gold.de_scenario_elasticity
+Enterprise Profits|BRENT,Enterprise Profits,BRENT,0.2,gold.de_scenario_elasticity
+Enterprise Profits|USFED,Enterprise Profits,USFED,-0.2,gold.de_scenario_elasticity
+Enterprise Profits|NOGDP,Enterprise Profits,NOGDP,0.3,gold.de_scenario_elasticity
+Enterprise Profits|DNOIL,Enterprise Profits,DNOIL,0.3,gold.de_scenario_elasticity
+Enterprise Profits|CIT,Enterprise Profits,CIT,0.3,gold.de_scenario_elasticity
+Customs Duty|NOGDP,Customs Duty,NOGDP,2.0,gold.de_scenario_elasticity
+Customs Duty|TOUR,Customs Duty,TOUR,0.05,gold.de_scenario_elasticity
+Oil Revenue|BRENT,Oil Revenue,BRENT,0.9,gold.de_scenario_elasticity
+Bank Taxes|USFED,Bank Taxes,USFED,0.3,gold.de_scenario_elasticity
+Bank Taxes|DNOIL,Bank Taxes,DNOIL,0.4,gold.de_scenario_elasticity
+Bank Taxes|CIT,Bank Taxes,CIT,0.3,gold.de_scenario_elasticity
+Other non-tax revenue|RETXN,Other non-tax revenue,RETXN,0.3,gold.de_scenario_elasticity
+Other non-tax revenue|PMI,Other non-tax revenue,PMI,0.05,gold.de_scenario_elasticity
+Other non-tax revenue|DNOIL,Other non-tax revenue,DNOIL,0.3,gold.de_scenario_elasticity

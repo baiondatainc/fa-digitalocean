@@ -1,0 +1,1 @@
+line_code:ID(Line),family_name:string,block:string,sort_order:int,is_tax:boolean,description:string,_origin:string

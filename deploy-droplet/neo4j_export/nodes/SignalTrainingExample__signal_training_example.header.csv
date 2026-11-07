@@ -1,0 +1,1 @@
+id:ID(SignalTrainingExample),news_id:string,headline:string,lede:string,source_name:string,category:string,sector:string,direction:string,label:string,rationale:string,created_by_id:string,created_at:localdatetime,_origin:string

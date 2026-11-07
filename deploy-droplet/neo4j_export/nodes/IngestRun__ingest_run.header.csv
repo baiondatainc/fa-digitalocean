@@ -1,0 +1,1 @@
+id:ID(IngestRun),source_code:string,mode:string,trigger:string,since:localdatetime,status:string,started_at:localdatetime,finished_at:localdatetime,rows_fetched:int,rows_inserted:int,rows_updated:int,rows_revised:int,raw_object_keys:string[],warnings:string[],error:string,_origin:string

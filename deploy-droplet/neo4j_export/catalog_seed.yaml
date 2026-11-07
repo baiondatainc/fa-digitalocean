@@ -1,0 +1,921 @@
+labels:
+  AgentConfig:
+    id: id
+    properties:
+      id: id
+      environment_id: string
+      agent_key: string
+      config: string
+      updated_at: datetime
+      updated_by: string
+      _origin: string
+    source_tables:
+    - gold.agent_config
+  AgentLiveRun:
+    id: id
+    properties:
+      id: id
+      environment_id: string
+      preset_id: string
+      model_id: string
+      config_version: string
+      drivers: string
+      output: string
+      fiscal: string
+      what_moved: string
+      narrative_md: string
+      narrative_verified: boolean
+      inputs_hash: string
+      refreshed_at: datetime
+      llm_model: string
+      prompt_hash: string
+      news: string
+      news_hash: string
+      signals_applied: string
+      _origin: string
+    source_tables:
+    - gold.agent_live_run
+  AgentRun:
+    id: id
+    properties:
+      id: id
+      environment_id: string
+      trigger: string
+      inputs_hash: string
+      status: string
+      presets_written: int
+      llm_model: string
+      prompt_hash: string
+      tokens_in: int
+      tokens_out: int
+      error: string
+      started_at: datetime
+      finished_at: datetime
+      _origin: string
+    source_tables:
+    - gold.agent_run
+  BacktestConfig:
+    id: id
+    properties:
+      id: id
+      environment_id: string
+      version: string
+      schema_version: int
+      config: string
+      provenance: string
+      built_at: datetime
+      is_current: boolean
+      _origin: string
+    source_tables:
+    - gold.backtest_config
+  BacktestRun:
+    id: id
+    properties:
+      id: id
+      environment_id: string
+      config_version: string
+      target_id: string
+      variant_id: string
+      as_of_vintages: boolean
+      metrics: string
+      folds: string
+      portfolio: string
+      compare: string
+      inputs_hash: string
+      created_by: string
+      created_at: datetime
+      _origin: string
+    source_tables:
+    - gold.backtest_run
+  BspCycle:
+    id: id
+    properties:
+      id: id
+      name: string
+      starts_at: localdatetime
+      _origin: string
+    source_tables:
+    - public.bsp_cycle
+  BspStage:
+    id: id
+    properties:
+      id: id
+      cycle_id: string
+      number: int
+      name: string
+      milestone: string
+      due_at: localdatetime
+      owner: string
+      status: string
+      forms: string[]
+      rework_loops: int
+      _origin: string
+    source_tables:
+    - public.bsp_stage
+  ClientBaselineLine:
+    id: id
+    properties:
+      id: id
+      environment_id: string
+      line: string
+      year: int
+      value_aed_m: float
+      source_file: string
+      sheet_name: string
+      loaded_at: datetime
+      cell_range: string
+      _origin: string
+    source_tables:
+    - gold.client_baseline_line
+  ClientPolicyMeasure:
+    id: id
+    properties:
+      id: id
+      environment_id: string
+      measure_id: string
+      description: string
+      enabled_default: boolean
+      intro_year: int
+      yields: string
+      source_file: string
+      loaded_at: datetime
+      _origin: string
+    source_tables:
+    - gold.client_policy_measure
+  Country:
+    id: code
+    properties:
+      code: id
+    source_tables: []
+  Dataset:
+    id: id
+    properties:
+      id: id
+      table_name: string
+      source_code: string
+      title: string
+      kpi_codes: string[]
+      row_count: int
+      geo_count: int
+      period_min: localdatetime
+      period_max: localdatetime
+      silver_object_key: string
+      run_id: string
+      built_at: localdatetime
+      _origin: string
+    source_tables:
+    - public.gold_dataset
+  DeMeasure:
+    id: measure_id
+    properties:
+      measure_id: id
+      ia_name: string
+      short_name: string
+      family: string
+      rate: string
+      sector: string
+      start_year: int
+      default_on: boolean
+      _origin: string
+    source_tables:
+    - gold.de_measure
+  DeScenarioDriver:
+    id: code
+    properties:
+      code: id
+      label: string
+      driver_group: string
+      group_name: string
+      group_tag: string
+      unit: string
+      delta_unit: string
+      dec: int
+      min_val: float
+      max_val: float
+      step_val: float
+      locked: boolean
+      sort_order: int
+      live_instrument_id: string
+      live_source: string
+      live_series: string
+      live_transform: string
+      live_cadence_min: int
+      _origin: string
+    source_tables:
+    - gold.de_scenario_driver
+  DeScenarioDriverValue:
+    id: id
+    properties:
+      id: id
+      scenario: string
+      code: string
+      value: float
+      _origin: string
+    source_tables:
+    - gold.de_scenario_driver_value
+  DeScenarioElasticity:
+    id: id
+    properties:
+      id: id
+      line_name: string
+      driver_code: string
+      elasticity: float
+      _origin: string
+    source_tables:
+    - gold.de_scenario_elasticity
+  DeSource:
+    id: id
+    properties:
+      id: id
+      level: string
+      name: string
+      url: string
+      provides: string
+      status: string
+      _origin: string
+    source_tables:
+    - gold.de_source
+  Document:
+    id: id
+    properties:
+      id: id
+      source_code: string
+      title: string
+      object_key: string
+      parsed_key: string
+      mime_type: string
+      pages: int
+      published_at: localdatetime
+      retrieved_at: localdatetime
+      parse_status: string
+      kind: string
+      rows: int
+      _origin: string
+    source_tables:
+    - public.document
+  Driver:
+    id: driver_code
+    properties:
+      driver_code: id
+      name: string
+      unit: string
+      timing: string
+      source: string
+      is_policy: boolean
+      _origin: string
+    source_tables:
+    - public.dim_driver
+  DubaipulseDataset:
+    id: slug
+    properties:
+      slug: id
+      scope: string
+      org: string
+      prefer_csv: boolean
+      cadence_cron: string
+      target_table: string
+      target_group: string
+      verified: boolean
+      last_fetched_at: datetime
+      last_status: string
+      last_rows: int
+      next_expected_release: datetime
+      last_error: string
+      _origin: string
+    source_tables:
+    - public.dubaipulse_dataset
+  FiscalForecastConfig:
+    id: id
+    properties:
+      id: id
+      environment_id: string
+      version: string
+      schema_version: int
+      config: string
+      provenance: string
+      built_at: datetime
+      is_current: boolean
+      _origin: string
+    source_tables:
+    - gold.fiscal_forecast_config
+  FiscalForecastRun:
+    id: id
+    properties:
+      id: id
+      environment_id: string
+      config_version: string
+      preset_id: string
+      rules: string
+      macro: string
+      revenue: string
+      reconciliation: string
+      plan: string
+      inputs_hash: string
+      created_by: string
+      created_at: datetime
+      engine_run_id: string
+      vintages: string
+      _origin: string
+    source_tables:
+    - gold.fiscal_forecast_run
+  ForecastPoint:
+    id: id
+    properties:
+      id: id
+      run_id: string
+      kpi_code: string
+      geo: string
+      period: localdatetime
+      value: float
+      lower: float
+      upper: float
+      _origin: string
+    source_tables:
+    - public.forecast_point
+  ForecastRun:
+    id: id
+    properties:
+      id: id
+      model_code: string
+      scenario: string
+      assumptions: string
+      levers: string
+      signal_ids: string[]
+      inputs_hash: string
+      artefact_key: string
+      notes: string
+      status: string
+      created_by_id: string
+      created_at: localdatetime
+      _origin: string
+    source_tables:
+    - public.forecast_run
+  IngestRun:
+    id: id
+    properties:
+      id: id
+      source_code: string
+      mode: string
+      trigger: string
+      since: localdatetime
+      status: string
+      started_at: localdatetime
+      finished_at: localdatetime
+      rows_fetched: int
+      rows_inserted: int
+      rows_updated: int
+      rows_revised: int
+      raw_object_keys: string[]
+      warnings: string[]
+      error: string
+      _origin: string
+    source_tables:
+    - public.ingest_run
+  Kpi:
+    id: code
+    properties:
+      code: id
+      name: string
+      unit: string
+      frequency: string
+      category: string
+      description: string
+      _origin: string
+    source_tables:
+    - public.kpi
+  KpiObservation:
+    id: id
+    properties:
+      id: id
+      kpi_code: string
+      geo: string
+      period: localdatetime
+      value: float
+      unit: string
+      source_code: string
+      document_id: string
+      page: int
+      confidence: float
+      retrieved_at: localdatetime
+      validated: boolean
+      note: string
+      _origin: string
+    source_tables:
+    - public.kpi_observation
+  KpiObservationRevision:
+    id: id
+    properties:
+      id: id
+      kpi_code: string
+      geo: string
+      period: localdatetime
+      source_code: string
+      old_value: float
+      new_value: float
+      old_retrieved_at: localdatetime
+      run_id: string
+      revised_at: localdatetime
+      _origin: string
+    source_tables:
+    - public.kpi_observation_revision
+  Line:
+    id: line_code
+    properties:
+      line_code: id
+      family_name: string
+      block: string
+      sort_order: int
+      is_tax: boolean
+      description: string
+      _origin: string
+    source_tables:
+    - public.dim_line
+  LineSourceMap:
+    id: id
+    properties:
+      id: id
+      source: string
+      source_line_name: string
+      line_code: string
+      note: string
+      _origin: string
+    source_tables:
+    - public.dim_line_source_map
+  ModelVersion:
+    id: model_version_id
+    properties:
+      model_version_id: id
+      code: string
+      version: string
+      config_name: string
+      config_json: string
+      label: string
+      created_at: localdatetime
+      _origin: string
+    source_tables:
+    - public.model_version
+  MtffDashboardConfig:
+    id: id
+    properties:
+      id: id
+      environment_id: string
+      version: string
+      schema_version: int
+      config: string
+      provenance: string
+      built_at: datetime
+      is_current: boolean
+      _origin: string
+    source_tables:
+    - gold.mtff_dashboard_config
+  PolicySimTerm:
+    id: id
+    properties:
+      id: id
+      environment_id: string
+      cycle: string
+      world_run_id: string
+      created_by: string
+      created_at: datetime
+      _origin: string
+    source_tables:
+    - gold.policy_sim_term
+  PrismaMigrations:
+    id: id
+    properties:
+      id: id
+      checksum: string
+      finished_at: datetime
+      migration_name: string
+      logs: string
+      rolled_back_at: datetime
+      started_at: datetime
+      applied_steps_count: int
+      _origin: string
+    source_tables:
+    - public._prisma_migrations
+  RashidAnalysis:
+    id: news_id
+    properties:
+      news_id: id
+      signal_id: string
+      decision: string
+      rationale: string
+      impact_aed_bn: float
+      impact_explanation: string
+      corrective_measures: string
+      evidence_md: string
+      model: string
+      created_at: localdatetime
+      _origin: string
+    source_tables:
+    - public.rashid_analysis
+  Scenario:
+    id: scenario_id
+    properties:
+      scenario_id: id
+      code: string
+      name: string
+      description: string
+      created_at: localdatetime
+      _origin: string
+    source_tables:
+    - public.scenario
+  ScenarioEngineConfig:
+    id: id
+    properties:
+      id: id
+      environment_id: string
+      version: string
+      schema_version: int
+      config: string
+      provenance: string
+      built_at: datetime
+      is_current: boolean
+      _origin: string
+    source_tables:
+    - gold.scenario_engine_config
+  ScenarioEngineRun:
+    id: id
+    properties:
+      id: id
+      environment_id: string
+      config_version: string
+      model_id: string
+      preset_id: string
+      overrides: string
+      feedback_on: boolean
+      focus_year: int
+      output: string
+      inputs_hash: string
+      created_by: string
+      created_at: datetime
+      run_name: string
+      description: string
+      version_no: int
+      state: string
+      supersedes_run_id: string
+      vintages: string
+      _origin: string
+    source_tables:
+    - gold.scenario_engine_run
+  Series:
+    id: series_id
+    properties:
+      series_id: id
+      table: string
+      measure: string
+      cofog_code: string
+      n_points: int
+      first_period: string
+      last_period: string
+      latest_value: float
+      min_value: float
+      max_value: float
+      mean_value: float
+      has_points: boolean
+      periods: string[]
+      values: float[]
+      _origin: string
+      driver_group: string
+      metric: string
+      entity_code: string
+      series_group: string
+      prices_basis: string
+      sector_code: string
+      account_code: string
+      country_code: string
+      economy_group: string
+      instrument_id: string
+    source_tables:
+    - gold.de_cofog
+    - gold.de_driver
+    - gold.de_expenditure_entity
+    - gold.de_fiscal_history
+    - gold.de_gdp_quarterly
+    - gold.de_gdp_sector
+    - gold.de_macro_baseline
+    - gold.de_measure_impact
+    - gold.de_revenue_account
+    - gold.de_revenue_entity
+    - gold.de_scenario_line
+    - gold.de_scenario_macro
+    - gold.gold_bis_cbpol
+    - gold.gold_ecb
+    - gold.gold_eia
+    - gold.gold_fred
+    - gold.gold_imf_weo
+    - gold.gold_oecd_mei
+    - gold.gold_wb_data360
+    - gold.gold_wb_wdi
+    - gold.ssot_market_series
+  Signal:
+    id: id
+    properties:
+      id: id
+      headline: string
+      source_url: string
+      source_name: string
+      published_at: localdatetime
+      sector: string
+      status: string
+      analysis: string
+      revenue_impact_aed_bn: float
+      expenditure_impact_aed_bn: float
+      d33_objective: string
+      d33_impact_score: float
+      confidence: float
+      horizon_years: int
+      document_id: string
+      reviewed_by_id: string
+      created_at: localdatetime
+      rule_impact_aed_bn: float
+      engine_preset: string
+      pinned_vintage: string
+      engine_run_id: string
+      engine_run_state: string
+      engine_impact_aed_bn: float
+      assessed_at: datetime
+      ssot_market_news_id: string
+      promoted_by: string
+      _origin: string
+    source_tables:
+    - public.signal
+  SignalTrainingExample:
+    id: id
+    properties:
+      id: id
+      news_id: string
+      headline: string
+      lede: string
+      source_name: string
+      category: string
+      sector: string
+      direction: string
+      label: string
+      rationale: string
+      created_by_id: string
+      created_at: localdatetime
+      _origin: string
+    source_tables:
+    - public.signal_training_example
+  Source:
+    id: code
+    properties:
+      code: id
+      name: string
+      kind: string
+      url: string
+      licence: string
+      refresh: string
+      cadence_cron: string
+      description: string
+      enabled: boolean
+      history_from: int
+      last_error: string
+      last_fetched_at: localdatetime
+      last_rows: int
+      last_status: string
+      next_expected_release: localdatetime
+      tier: string
+      _origin: string
+    source_tables:
+    - public.source
+  SsotCountryMacro:
+    id: iso3
+    properties:
+      iso3: id
+      country: string
+      gdp_usd_bn: float
+      gdp_growth_pct: float
+      interest_rate_pct: float
+      inflation_rate_pct: float
+      jobless_rate_pct: float
+      gov_budget_pct_gdp: float
+      debt_pct_gdp: float
+      current_account_pct_gdp: float
+      population_mn: float
+      asof: date
+      provenance: string
+      retrieved_at: datetime
+      _origin: string
+    source_tables:
+    - gold.ssot_country_macro
+  SsotMarketInstrument:
+    id: instrument_id
+    properties:
+      instrument_id: id
+      symbol: string
+      name: string
+      cls: string
+      country_iso3: string
+      publisher: string
+      publisher_code: string
+      currency: string
+      unit: string
+      active: boolean
+      created_at: datetime
+      updated_at: datetime
+      _origin: string
+    source_tables:
+    - gold.ssot_market_instrument
+  SsotMarketNews:
+    id: id
+    properties:
+      id: id
+      headline: string
+      lede: string
+      body_md: string
+      asof: datetime
+      category: string
+      related_instruments: string[]
+      image_url: string
+      source: string
+      source_url: string
+      agent_run_id: string
+      retrieved_at: datetime
+      _origin: string
+    source_tables:
+    - gold.ssot_market_news
+  SsotMarketQuote:
+    id: instrument_id
+    properties:
+      instrument_id: id
+      value: float
+      change_abs: float
+      change_pct: float
+      asof: datetime
+      source: string
+      retrieved_at: datetime
+      _origin: string
+    source_tables:
+    - gold.ssot_market_quote
+  User:
+    id: id
+    properties:
+      id: id
+      email: string
+      name: string
+      role: string
+      created_at: localdatetime
+      password_hash: string
+      is_active: boolean
+      last_login_at: localdatetime
+      _origin: string
+    source_tables:
+    - public.user
+relationships:
+  FOR_CODE:
+  - from: DeScenarioDriverValue
+    to: DeScenarioDriver
+    properties: []
+  FOR_COUNTRY:
+  - from: Series
+    to: Country
+    properties: []
+  - from: SsotCountryMacro
+    to: Country
+    properties: []
+  - from: ForecastPoint
+    to: Country
+    properties: []
+  - from: KpiObservation
+    to: Country
+    properties: []
+  - from: KpiObservationRevision
+    to: Country
+    properties: []
+  FOR_CYCLE:
+  - from: BspStage
+    to: BspCycle
+    properties: []
+  FOR_DRIVER:
+  - from: DeScenarioElasticity
+    to: DeScenarioDriver
+    properties: []
+  FOR_ENGINE_RUN:
+  - from: FiscalForecastRun
+    to: ScenarioEngineRun
+    properties: []
+  FOR_INSTRUMENT:
+  - from: SsotMarketQuote
+    to: SsotMarketInstrument
+    properties: []
+  - from: Series
+    to: SsotMarketInstrument
+    properties: []
+  FOR_KPI:
+  - from: ForecastPoint
+    to: Kpi
+    properties: []
+  - from: KpiObservation
+    to: Kpi
+    properties: []
+  - from: KpiObservationRevision
+    to: Kpi
+    properties: []
+  FOR_LINE:
+  - from: LineSourceMap
+    to: Line
+    properties: []
+  FOR_RUN:
+  - from: ForecastPoint
+    to: ForecastRun
+    properties: []
+  FOR_SIGNAL:
+  - from: RashidAnalysis
+    to: Signal
+    properties: []
+  FOR_SOURCE:
+  - from: Document
+    to: Source
+    properties: []
+  - from: Dataset
+    to: Source
+    properties: []
+  - from: IngestRun
+    to: Source
+    properties: []
+  - from: KpiObservation
+    to: Source
+    properties: []
+  - from: KpiObservationRevision
+    to: Source
+    properties: []
+  FOR_SSOT_MARKET_NEWS:
+  - from: Signal
+    to: SsotMarketNews
+    properties: []
+  FOR_SUPERSEDES_RUN:
+  - from: ScenarioEngineRun
+    to: ScenarioEngineRun
+    properties: []
+  FOR_WORLD_RUN:
+  - from: PolicySimTerm
+    to: ScenarioEngineRun
+    properties: []
+counts:
+  dangling:FOR_AGENT_RUN: 1133
+  dangling:FOR_SIGNAL: 3
+  node:AgentConfig: 1
+  node:AgentLiveRun: 7
+  node:AgentRun: 5812
+  node:BacktestConfig: 11
+  node:BacktestRun: 1
+  node:BspCycle: 1
+  node:BspStage: 5
+  node:ClientBaselineLine: 192
+  node:ClientPolicyMeasure: 34
+  node:Country: 221
+  node:Dataset: 8
+  node:DeMeasure: 18
+  node:DeScenarioDriver: 11
+  node:DeScenarioDriverValue: 77
+  node:DeScenarioElasticity: 22
+  node:DeSource: 24
+  node:Document: 8
+  node:Driver: 11
+  node:DubaipulseDataset: 27
+  node:FiscalForecastConfig: 11
+  node:FiscalForecastRun: 15
+  node:ForecastPoint: 5
+  node:ForecastRun: 1
+  node:IngestRun: 117
+  node:Kpi: 40
+  node:KpiObservation: 118714
+  node:KpiObservationRevision: 3707
+  node:Line: 10
+  node:LineSourceMap: 47
+  node:ModelVersion: 1
+  node:MtffDashboardConfig: 6
+  node:PolicySimTerm: 1
+  node:PrismaMigrations: 9
+  node:RashidAnalysis: 1432
+  node:Scenario: 8
+  node:ScenarioEngineConfig: 11
+  node:ScenarioEngineRun: 74
+  node:Series: 2656
+  node:Signal: 162
+  node:SignalTrainingExample: 4
+  node:Source: 27
+  node:SsotCountryMacro: 4
+  node:SsotMarketInstrument: 61
+  node:SsotMarketNews: 1391
+  node:SsotMarketQuote: 26
+  node:User: 3
+  rel:FOR_CODE: 77
+  rel:FOR_COUNTRY: 124704
+  rel:FOR_CYCLE: 5
+  rel:FOR_DRIVER: 22
+  rel:FOR_ENGINE_RUN: 11
+  rel:FOR_INSTRUMENT: 76
+  rel:FOR_KPI: 122426
+  rel:FOR_LINE: 47
+  rel:FOR_RUN: 5
+  rel:FOR_SIGNAL: 44
+  rel:FOR_SOURCE: 122554
+  rel:FOR_SSOT_MARKET_NEWS: 162
+  rel:FOR_SUPERSEDES_RUN: 12
+  rel:FOR_WORLD_RUN: 1
+note: 'Seed for data_dictionary.yaml: add value maps, label_keywords (en/ar), common_paths,
+  allowed_topics.'

@@ -1,0 +1,8 @@
+c76e076b-7ed6-4d0e-8cb1-dfbd9703459b,BIS_CBPOL,BIS_CBPOL gold table (1 KPIs),gold.gold_bis_cbpol,,,,,2026-10-11T10:30:33.999000,VALIDATED,gold,10926,public.document
+b1c2ab5e-ab36-421e-8711-2340577583cc,ECB,ECB gold table (2 KPIs),gold.gold_ecb,,,,,2026-10-11T10:30:34.517000,VALIDATED,gold,6852,public.document
+adb8e9fc-6ba3-4a73-8ff4-500dbd7f933e,EIA,EIA gold table (4 KPIs),gold.gold_eia,,,,,2026-10-11T10:30:35.042000,VALIDATED,gold,6869,public.document
+452e8952-ce49-45ef-892e-13697957fdaf,FRED,FRED gold table (3 KPIs),gold.gold_fred,,,,,2026-10-11T10:30:35.567000,VALIDATED,gold,6852,public.document
+c5739dd5-6975-4325-ae94-fb9d69b4ab44,IMF_WEO,IMF_WEO gold table (9 KPIs),gold.gold_imf_weo,,,,,2026-10-11T10:30:36.181000,VALIDATED,gold,6834,public.document
+ce621b27-68ca-4e1f-8a65-66c3c7267775,OECD_MEI,OECD_MEI gold table (1 KPIs),gold.gold_oecd_mei,,,,,2026-10-11T10:30:36.688000,VALIDATED,gold,7609,public.document
+3bce9fae-d9c7-41f5-8fdb-ba2e3b26ab77,WB_DATA360,WB_DATA360 gold table (2 KPIs),gold.gold_wb_data360,,,,,2026-10-11T10:30:37.182000,VALIDATED,gold,1100,public.document
+6ca1f6da-623f-4abb-9049-37a1752ec254,WB_WDI,WB_WDI gold table (6 KPIs),gold.gold_wb_wdi,,,,,2026-10-11T10:30:37.673000,VALIDATED,gold,1144,public.document

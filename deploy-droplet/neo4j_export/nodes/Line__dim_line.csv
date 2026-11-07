@@ -1,0 +1,10 @@
+fees_charges,Fees & Charges,MAIN,1,false,"Admin fees, DLD, Salik, permits, licences, tariffs, concessions, rentals, penalties",public.dim_line
+vat_excise,VAT & Excise Duty,MAIN,2,true,"Value-added tax, excise tax on tobacco and sugar, alcohol tax",public.dim_line
+enterprise_profits,Enterprise Profits,MAIN,3,false,"GRE profits, interest income, surplus accounts, FX gains",public.dim_line
+customs_duty,Customs Duty,MAIN,4,true,Customs duties and customs admin fees,public.dim_line
+other_nontax,Other non-tax revenue,MAIN,5,false,"Sales of goods, services, assets, grants, donations, other non-current revenue",public.dim_line
+oil_revenue,Oil Revenue,MAIN,6,false,Petroleum revenue,public.dim_line
+bank_taxes,Bank Taxes,MAIN,7,true,Foreign bank tax and corporate income tax on banks,public.dim_line
+feedback_loop,Feedback (loop),FEEDBACK,8,false,Behavioural loop adjustment — written as a line so Σ lines = TOTAL,public.dim_line
+TOTAL,Total revenue,TOTAL,99,false,Scenario total; equals Σ MAIN lines + feedback_loop,public.dim_line
+SKIP,(subtotal — not aggregated),SKIP,100,false,Target for source lines that are subtotals; the loader never aggregates these,public.dim_line

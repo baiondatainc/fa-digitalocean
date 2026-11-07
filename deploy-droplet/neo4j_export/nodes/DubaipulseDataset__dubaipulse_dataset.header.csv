@@ -1,0 +1,1 @@
+slug:ID(DubaipulseDataset),scope:string,org:string,prefer_csv:boolean,cadence_cron:string,target_table:string,target_group:string,verified:boolean,last_fetched_at:datetime,last_status:string,last_rows:int,next_expected_release:datetime,last_error:string,_origin:string

@@ -1,0 +1,1 @@
+model_version_id:ID(ModelVersion),code:string,version:string,config_name:string,config_json:string,label:string,created_at:localdatetime,_origin:string

@@ -1,0 +1,1 @@
+id:ID(AgentConfig),environment_id:string,agent_key:string,config:string,updated_at:datetime,updated_by:string,_origin:string

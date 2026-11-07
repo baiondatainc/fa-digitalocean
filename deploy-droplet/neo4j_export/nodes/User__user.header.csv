@@ -1,0 +1,1 @@
+id:ID(User),email:string,name:string,role:string,created_at:localdatetime,password_hash:string,is_active:boolean,last_login_at:localdatetime,_origin:string

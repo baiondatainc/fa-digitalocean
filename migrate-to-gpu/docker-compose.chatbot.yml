@@ -1,0 +1,203 @@
+# GPU-enabled chatbot stack. Drop this into /opt/chatbot/docker-compose.yml
+# on the new box AFTER 02-start.sh rsyncs the chatbot/ directory from the old box.
+# Differences from the CPU version shipped on the old droplet:
+#   - Local `ollama` service (with GPU reservation) INSTEAD of reusing the
+#     old box's existing future-advisor-ollama container. This gives you a
+#     clean, GPU-backed Ollama owned by this stack.
+#   - synthea-agent now talks to this local ollama via OLLAMA_BASE_URL=http://ollama:11434
+#   - Network is a fresh `fa_internal` instead of attaching to an existing one.
+
+services:
+
+  mongodb:
+    image: mongo:7
+    container_name: fa-mongodb
+    restart: unless-stopped
+    networks: [fa_internal]
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.runCommand({ping:1}).ok"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+  meilisearch:
+    image: getmeili/meilisearch:v1.12.3
+    container_name: fa-meilisearch
+    restart: unless-stopped
+    networks: [fa_internal]
+    ports:
+      - "127.0.0.1:7700:7700"
+    environment:
+      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY:?set MEILI_MASTER_KEY in .env}
+      - MEILI_NO_ANALYTICS=true
+    volumes:
+      - meili_data:/meili_data
+
+  redis:
+    image: redis:7-alpine
+    container_name: fa-redis
+    restart: unless-stopped
+    networks: [fa_internal]
+    command: ["redis-server", "--maxmemory", "1gb", "--maxmemory-policy", "allkeys-lru", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  neo4j:
+    image: neo4j:5.26-community
+    container_name: fa-neo4j
+    restart: unless-stopped
+    networks: [fa_internal]
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/${NEO4J_PASSWORD:?set NEO4J_PASSWORD in .env}
+      - NEO4J_server_memory_heap_initial__size=1G
+      - NEO4J_server_memory_heap_max__size=4G
+      - NEO4J_server_memory_pagecache__size=4G
+      - NEO4J_PLUGINS=["apoc"]
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+      - NEO4J_dbms_security_procedures_allowlist=apoc.*
+      - NEO4J_server_config_strict__validation_enabled=false
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+      - ./neo4j_export:/import:ro
+    healthcheck:
+      test: ["CMD", "cypher-shell", "-u", "neo4j", "-p", "${NEO4J_PASSWORD}", "RETURN 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+      start_period: 40s
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: fa-ollama
+    restart: unless-stopped
+    networks: [fa_internal]
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+      - ./Modelfile.dof:/Modelfile.dof:ro
+    environment:
+      - OLLAMA_KEEP_ALIVE=24h
+      - OLLAMA_NUM_PARALLEL=2
+    # ──────── GPU reservation ────────
+    # Requires NVIDIA Container Toolkit on the host (installed by 01-prereqs.sh).
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD-SHELL", "ollama list >/dev/null 2>&1"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+
+  synthea-agent:
+    image: registry.digitalocean.com/future-advisor/synthea-agent:v1.0.5
+    container_name: fa-synthea-agent
+    restart: unless-stopped
+    networks: [fa_internal]
+    depends_on:
+      neo4j:
+        condition: service_healthy
+      ollama:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "8001:8001"
+    environment:
+      - APP_HOST=0.0.0.0
+      - APP_PORT=8001
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USERNAME=neo4j
+      - NEO4J_PASSWORD=${NEO4J_PASSWORD}
+      - LLM_PROVIDER=${LLM_PROVIDER:-ollama}
+      - LLM_MODEL=${LLM_MODEL:-qwen3:4b-instruct-2507-q4_K_M}
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - OLLAMA_MODEL=${OLLAMA_MODEL:-qwen3:4b-instruct-2507-q4_K_M}
+      - CYPHER_MODEL=futureadvisor-cypher:latest
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-user_provided}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - BATCH_SIZE=5000
+      - GUARDRAILS_ENABLED=true
+      - GUARDRAILS_REDACT_OUTPUT=true
+      - CYPHER_ROW_LIMIT=100
+      - CYPHER_TIMEOUT=15
+      - MEMORY_ENABLED=true
+      - CACHE_ENABLED=true
+      - SCHEMA_VERSION=v2
+      - REDIS_URL=redis://redis:6379/0
+      - SESSION_TTL=86400
+      - CACHE_TTL=86400
+      - HYBRID_RETRIEVER_ENABLED=false
+    volumes:
+      - ./data_dictionary.yaml:/app/metadata/data_dictionary.yaml:ro
+      # The num_ctx 10240 → 16384 patch; keeps the 15k-token DoF prompt fitting.
+      - ./patches/chain.py:/app/qa/chain.py:ro
+
+  librechat:
+    image: registry.digitalocean.com/future-advisor/librechat:v1.0.1
+    container_name: fa-librechat
+    restart: unless-stopped
+    networks: [fa_internal]
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      synthea-agent:
+        condition: service_started
+    ports:
+      - "3080:3080"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=3080
+      - MONGO_URI=mongodb://mongodb:27017/LibreChat
+      - MEILI_HOST=http://meilisearch:7700
+      - MEILI_MASTER_KEY=${MEILI_MASTER_KEY}
+      - SEARCH=true
+      - AGENT_API_URL=http://synthea-agent:8001
+      - AGENTS_ENABLED=true
+      - TITLE_CONVO=true
+      - ARTIFACTS_ENABLED=true
+      - ALLOW_REGISTRATION=${ALLOW_REGISTRATION:-false}
+      - ALLOW_EMAIL_LOGIN=${ALLOW_EMAIL_LOGIN:-true}
+      - JWT_SECRET=${JWT_SECRET:?set JWT_SECRET in .env}
+      - JWT_REFRESH_SECRET=${JWT_REFRESH_SECRET:?set JWT_REFRESH_SECRET in .env}
+      - CREDS_KEY=${CREDS_KEY:?set CREDS_KEY in .env}
+      - CREDS_IV=${CREDS_IV:?set CREDS_IV in .env}
+    volumes:
+      - ./librechat.yaml:/app/librechat.yaml:ro
+      - librechat_images:/app/client/public/images
+      - librechat_uploads:/app/uploads
+      - librechat_logs:/app/logs
+
+networks:
+  fa_internal:
+    driver: bridge
+
+volumes:
+  mongo_data:
+  meili_data:
+  redis_data:
+  neo4j_data:
+  neo4j_logs:
+  ollama_data:
+  librechat_images:
+  librechat_uploads:
+  librechat_logs:
