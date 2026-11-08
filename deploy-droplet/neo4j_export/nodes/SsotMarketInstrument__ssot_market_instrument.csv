@@ -1,7 +1,8 @@
-CL,WTI_SPOT,WTI crude,commodity,,Yahoo Finance,WTI_SPOT,USD,USD per barrel,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-BZ,BRENT_SPOT,Brent crude,commodity,,Yahoo Finance,BRENT_SPOT,USD,USD per barrel,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-NG,GAS_HENRY,Henry Hub natural gas,commodity,,Yahoo Finance,GAS_HENRY,USD,USD per MMBtu,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-RB,GASOLINE,RBOB gasoline,commodity,,Yahoo Finance,GASOLINE,USD,USD per gallon,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
+CL,WTI_SPOT,WTI crude,commodity,,Yahoo Finance,WTI_SPOT,USD,USD per barrel,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+BZ,BRENT_SPOT,Brent crude,commodity,,Yahoo Finance,BRENT_SPOT,USD,USD per barrel,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+NG,GAS_HENRY,Henry Hub natural gas,commodity,,Yahoo Finance,GAS_HENRY,USD,USD per MMBtu,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+RB,GASOLINE,RBOB gasoline,commodity,,Yahoo Finance,GASOLINE,USD,USD per gallon,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+GC,GOLD,Gold,commodity,,Yahoo Finance,GOLD,USD,USD per oz,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
 WTI_SPOT,CL=F,WTI crude,commodity,,Yahoo Finance,CL=F,USD,USD per barrel,true,2026-10-23T06:05:28.577864+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
 BRENT_SPOT,BZ=F,Brent crude,commodity,,Yahoo Finance,BZ=F,USD,USD per barrel,true,2026-10-23T06:05:28.577864+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
 GAS_HENRY,NG=F,Henry Hub natural gas,commodity,,Yahoo Finance,NG=F,USD,USD per MMBtu,true,2026-10-23T06:05:28.577864+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
@@ -11,19 +12,18 @@ SILVER,SI=F,Silver,commodity,,Yahoo Finance,SI=F,USD,USD per oz,true,2026-10-23T
 COPPER,HG=F,Copper,commodity,,Yahoo Finance,HG=F,USD,USD per lb,true,2026-10-23T06:05:28.577864+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
 PLATINUM,PL=F,Platinum,commodity,,Yahoo Finance,PL=F,USD,USD per oz,true,2026-10-23T06:05:28.577864+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
 WHEAT_CBOT,ZW=F,Wheat (CBOT),commodity,,Yahoo Finance,ZW=F,USD,USD cents per bu,true,2026-10-23T06:05:28.577864+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
-GC,GOLD,Gold,commodity,,Yahoo Finance,GOLD,USD,USD per oz,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-SI,SILVER,Silver,commodity,,Yahoo Finance,SILVER,USD,USD per oz,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-HG,COPPER,Copper,commodity,,Yahoo Finance,COPPER,USD,USD per lb,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-PL,PLATINUM,Platinum,commodity,,Yahoo Finance,PLATINUM,USD,USD per oz,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-ZW,WHEAT_CBOT,Wheat (CBOT),commodity,,Yahoo Finance,WHEAT_CBOT,USD,USD cents per bu,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-ZC,CORN_CBOT,Corn (CBOT),commodity,,Yahoo Finance,CORN_CBOT,USD,USD cents per bu,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-KC,COFFEE_ICE,Coffee (ICE),commodity,,Yahoo Finance,COFFEE_ICE,USD,USD cents per lb,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-SB,SUGAR_ICE,Sugar #11 (ICE),commodity,,Yahoo Finance,SUGAR_ICE,USD,USD cents per lb,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-UST10,UST_10Y,US 10y Treasury yield,bond,USA,Yahoo Finance,UST_10Y,USD,% yield,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-UST5,UST_5Y,US 5y Treasury yield,bond,USA,Yahoo Finance,UST_5Y,USD,% yield,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-UST30,UST_30Y,US 30y Treasury yield,bond,USA,Yahoo Finance,UST_30Y,USD,% yield,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-UST13W,UST_13W,US 13w T-bill,bond,USA,Yahoo Finance,UST_13W,USD,% yield,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-VIX,VIX,VIX (volatility),index,USA,Yahoo Finance,VIX,USD,index pts,true,2026-10-29T06:02:18.541819+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
+SI,SILVER,Silver,commodity,,Yahoo Finance,SILVER,USD,USD per oz,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+HG,COPPER,Copper,commodity,,Yahoo Finance,COPPER,USD,USD per lb,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+PL,PLATINUM,Platinum,commodity,,Yahoo Finance,PLATINUM,USD,USD per oz,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+ZW,WHEAT_CBOT,Wheat (CBOT),commodity,,Yahoo Finance,WHEAT_CBOT,USD,USD cents per bu,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+ZC,CORN_CBOT,Corn (CBOT),commodity,,Yahoo Finance,CORN_CBOT,USD,USD cents per bu,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+KC,COFFEE_ICE,Coffee (ICE),commodity,,Yahoo Finance,COFFEE_ICE,USD,USD cents per lb,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+SB,SUGAR_ICE,Sugar #11 (ICE),commodity,,Yahoo Finance,SUGAR_ICE,USD,USD cents per lb,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+UST10,UST_10Y,US 10y Treasury yield,bond,USA,Yahoo Finance,UST_10Y,USD,% yield,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+UST5,UST_5Y,US 5y Treasury yield,bond,USA,Yahoo Finance,UST_5Y,USD,% yield,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+UST30,UST_30Y,US 30y Treasury yield,bond,USA,Yahoo Finance,UST_30Y,USD,% yield,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+UST13W,UST_13W,US 13w T-bill,bond,USA,Yahoo Finance,UST_13W,USD,% yield,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+VIX,VIX,VIX (volatility),index,USA,Yahoo Finance,VIX,USD,index pts,true,2026-10-29T06:02:18.541819+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
 PARTNER_GDP_AVG,PARTNER_GDP_AVG,Partner GDP growth (avg),index,,Trading Economics (matrix),PARTNER_GDP_AVG,pct,y/y % avg,true,2026-11-04T19:08:38.353027+00:00,2026-11-04T19:13:03.932132+00:00,gold.ssot_market_instrument
 CORN_CBOT,ZC=F,Corn (CBOT),commodity,,Yahoo Finance,ZC=F,USD,USD cents per bu,true,2026-10-23T06:05:28.577864+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
 COFFEE_ICE,KC=F,Coffee (ICE),commodity,,Yahoo Finance,KC=F,USD,USD cents per lb,true,2026-10-23T06:05:28.577864+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
@@ -39,13 +39,6 @@ DAX,^GDAXI,DAX,index,DEU,Yahoo Finance,^GDAXI,EUR,index pts,true,2026-10-23T05:4
 AAPL,AAPL,Apple,stock,USA,Yahoo Finance,AAPL,USD,USD per share,true,2026-10-23T05:41:49.456199+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
 MSFT,MSFT,Microsoft,stock,USA,Yahoo Finance,MSFT,USD,USD per share,true,2026-10-23T05:41:49.456199+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
 NVDA,NVDA,Nvidia,stock,USA,Yahoo Finance,NVDA,USD,USD per share,true,2026-10-23T05:41:49.456199+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
-USDAED,USDAED,USD / AED (peg),fx,,CBUAE,USDAED,AED,AED per USD,true,2026-10-23T05:41:49.456199+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-EURUSD,EURUSD,EUR / USD,fx,,Yahoo Finance,EURUSD,USD,USD per EUR,true,2026-10-23T05:41:49.456199+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-GBPUSD,GBPUSD,GBP / USD,fx,,Yahoo Finance,GBPUSD,USD,USD per GBP,true,2026-10-23T05:41:49.456199+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-USDJPY,USDJPY,USD / JPY,fx,,Yahoo Finance,USDJPY,JPY,JPY per USD,true,2026-10-23T05:41:49.456199+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-USDCNY,USDCNY,USD / CNY,fx,,Yahoo Finance,USDCNY,CNY,CNY per USD,true,2026-10-23T05:41:49.456199+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-USDINR,USDINR,USD / INR,fx,,Yahoo Finance,USDINR,INR,INR per USD,true,2026-10-23T05:41:49.456199+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
-DXY,DXY,US dollar index (DXY),fx,USA,Yahoo Finance,DXY,index,DXY,true,2026-10-23T06:05:28.577864+00:00,2026-11-06T06:53:46.490012+00:00,gold.ssot_market_instrument
 META,META,Meta Platforms,stock,USA,Yahoo Finance,META,USD,USD per share,true,2026-10-23T05:41:49.456199+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
 EMAAR,EMAAR,Emaar Properties,stock,ARE,DFM,EMAAR,AED,AED per share,true,2026-10-23T05:41:49.456199+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
 ARMCO,2222.SR,Saudi Aramco,stock,SAU,Saudi Exchange,2222,SAR,SAR per share,true,2026-10-23T05:41:49.456199+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
@@ -59,3 +52,10 @@ UST_30Y,^TYX,US 30-year yield,bond,USA,Yahoo Finance,^TYX,,% yield,true,2026-10-
 DE10,DE10Y,Germany 10-year,bond,DEU,Bundesbank,WT1010,,% yield,true,2026-10-23T05:41:49.456199+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
 GB10,GB10Y,UK 10-year gilt,bond,GBR,Bank of England,IUDLG10,,% yield,true,2026-10-23T05:41:49.456199+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
 JP10,JP10Y,JGB 10-year,bond,JPN,MoF JP,JGB10Y,,% yield,true,2026-10-23T05:41:49.456199+00:00,2026-10-23T07:09:53.289669+00:00,gold.ssot_market_instrument
+USDAED,USDAED,USD / AED (peg),fx,,CBUAE,USDAED,AED,AED per USD,true,2026-10-23T05:41:49.456199+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+EURUSD,EURUSD,EUR / USD,fx,,Yahoo Finance,EURUSD,USD,USD per EUR,true,2026-10-23T05:41:49.456199+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+GBPUSD,GBPUSD,GBP / USD,fx,,Yahoo Finance,GBPUSD,USD,USD per GBP,true,2026-10-23T05:41:49.456199+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+USDJPY,USDJPY,USD / JPY,fx,,Yahoo Finance,USDJPY,JPY,JPY per USD,true,2026-10-23T05:41:49.456199+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+USDCNY,USDCNY,USD / CNY,fx,,Yahoo Finance,USDCNY,CNY,CNY per USD,true,2026-10-23T05:41:49.456199+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+USDINR,USDINR,USD / INR,fx,,Yahoo Finance,USDINR,INR,INR per USD,true,2026-10-23T05:41:49.456199+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument
+DXY,DXY,US dollar index (DXY),fx,USA,Yahoo Finance,DXY,index,DXY,true,2026-10-23T06:05:28.577864+00:00,2026-11-08T09:57:54.871666+00:00,gold.ssot_market_instrument

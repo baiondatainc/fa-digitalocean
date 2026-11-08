@@ -6,3 +6,4 @@ c5739dd5-6975-4325-ae94-fb9d69b4ab44,IMF_WEO,IMF_WEO gold table (9 KPIs),gold.go
 ce621b27-68ca-4e1f-8a65-66c3c7267775,OECD_MEI,OECD_MEI gold table (1 KPIs),gold.gold_oecd_mei,,,,,2026-10-11T10:30:36.688000,VALIDATED,gold,7609,public.document
 3bce9fae-d9c7-41f5-8fdb-ba2e3b26ab77,WB_DATA360,WB_DATA360 gold table (2 KPIs),gold.gold_wb_data360,,,,,2026-10-11T10:30:37.182000,VALIDATED,gold,1100,public.document
 6ca1f6da-623f-4abb-9049-37a1752ec254,WB_WDI,WB_WDI gold table (6 KPIs),gold.gold_wb_wdi,,,,,2026-10-11T10:30:37.673000,VALIDATED,gold,1144,public.document
+fce55a29-ffab-4c30-a150-334e46c67c67,IMF_DATAMAPPER,IMF_DATAMAPPER gold table (20 KPIs),gold.gold_imf_datamapper,,,,,2026-11-08T09:53:52.123000,VALIDATED,gold,4296,public.document

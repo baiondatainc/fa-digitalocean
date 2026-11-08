@@ -1,9 +1,5 @@
-base|BRENT,BRENT
-base|USFED,USFED
-base|DXY,DXY
 base|PMI,PMI
 base|TOUR,TOUR
-base|NOGDP,NOGDP
 base|RETXN,RETXN
 base|DNOIL,DNOIL
 base|EMP,EMP
@@ -75,3 +71,7 @@ trade|DNOIL,DNOIL
 trade|EMP,EMP
 trade|VAT,VAT
 trade|CIT,CIT
+base|BRENT,BRENT
+base|USFED,USFED
+base|DXY,DXY
+base|NOGDP,NOGDP

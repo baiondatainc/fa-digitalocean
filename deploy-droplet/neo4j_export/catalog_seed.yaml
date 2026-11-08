@@ -315,6 +315,7 @@ labels:
       created_at: datetime
       engine_run_id: string
       vintages: string
+      what_if: string
       _origin: string
     source_tables:
     - gold.fiscal_forecast_run
@@ -855,66 +856,66 @@ relationships:
     to: ScenarioEngineRun
     properties: []
 counts:
-  dangling:FOR_AGENT_RUN: 1133
+  dangling:FOR_AGENT_RUN: 1209
   dangling:FOR_SIGNAL: 3
   node:AgentConfig: 1
   node:AgentLiveRun: 7
-  node:AgentRun: 5812
+  node:AgentRun: 8164
   node:BacktestConfig: 11
   node:BacktestRun: 1
   node:BspCycle: 1
   node:BspStage: 5
   node:ClientBaselineLine: 192
   node:ClientPolicyMeasure: 34
-  node:Country: 221
-  node:Dataset: 8
+  node:Country: 224
+  node:Dataset: 9
   node:DeMeasure: 18
   node:DeScenarioDriver: 11
   node:DeScenarioDriverValue: 77
   node:DeScenarioElasticity: 22
   node:DeSource: 24
-  node:Document: 8
+  node:Document: 9
   node:Driver: 11
   node:DubaipulseDataset: 27
   node:FiscalForecastConfig: 11
   node:FiscalForecastRun: 15
   node:ForecastPoint: 5
   node:ForecastRun: 1
-  node:IngestRun: 117
-  node:Kpi: 40
-  node:KpiObservation: 118714
+  node:IngestRun: 126
+  node:Kpi: 66
+  node:KpiObservation: 150244
   node:KpiObservationRevision: 3707
   node:Line: 10
   node:LineSourceMap: 47
   node:ModelVersion: 1
   node:MtffDashboardConfig: 6
   node:PolicySimTerm: 1
-  node:PrismaMigrations: 9
-  node:RashidAnalysis: 1432
+  node:PrismaMigrations: 10
+  node:RashidAnalysis: 2136
   node:Scenario: 8
   node:ScenarioEngineConfig: 11
   node:ScenarioEngineRun: 74
   node:Series: 2656
-  node:Signal: 162
+  node:Signal: 294
   node:SignalTrainingExample: 4
-  node:Source: 27
+  node:Source: 28
   node:SsotCountryMacro: 4
   node:SsotMarketInstrument: 61
-  node:SsotMarketNews: 1391
+  node:SsotMarketNews: 2065
   node:SsotMarketQuote: 26
   node:User: 3
   rel:FOR_CODE: 77
-  rel:FOR_COUNTRY: 124704
+  rel:FOR_COUNTRY: 156234
   rel:FOR_CYCLE: 5
   rel:FOR_DRIVER: 22
   rel:FOR_ENGINE_RUN: 11
   rel:FOR_INSTRUMENT: 76
-  rel:FOR_KPI: 122426
+  rel:FOR_KPI: 153956
   rel:FOR_LINE: 47
   rel:FOR_RUN: 5
-  rel:FOR_SIGNAL: 44
-  rel:FOR_SOURCE: 122554
-  rel:FOR_SSOT_MARKET_NEWS: 162
+  rel:FOR_SIGNAL: 69
+  rel:FOR_SOURCE: 154095
+  rel:FOR_SSOT_MARKET_NEWS: 294
   rel:FOR_SUPERSEDES_RUN: 12
   rel:FOR_WORLD_RUN: 1
 note: 'Seed for data_dictionary.yaml: add value maps, label_keywords (en/ar), common_paths,

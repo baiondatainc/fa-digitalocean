@@ -1,9 +1,5 @@
-base|BRENT,base,BRENT,75.0,gold.de_scenario_driver_value
-base|USFED,base,USFED,3.75,gold.de_scenario_driver_value
-base|DXY,base,DXY,100.0,gold.de_scenario_driver_value
 base|PMI,base,PMI,54.0,gold.de_scenario_driver_value
 base|TOUR,base,TOUR,6.0,gold.de_scenario_driver_value
-base|NOGDP,base,NOGDP,3.2,gold.de_scenario_driver_value
 base|RETXN,base,RETXN,10.0,gold.de_scenario_driver_value
 base|DNOIL,base,DNOIL,4.0,gold.de_scenario_driver_value
 base|EMP,base,EMP,3.2,gold.de_scenario_driver_value
@@ -75,3 +71,7 @@ trade|DNOIL,trade,DNOIL,2.0,gold.de_scenario_driver_value
 trade|EMP,trade,EMP,1.6,gold.de_scenario_driver_value
 trade|VAT,trade,VAT,5.0,gold.de_scenario_driver_value
 trade|CIT,trade,CIT,9.0,gold.de_scenario_driver_value
+base|BRENT,base,BRENT,125.44,gold.de_scenario_driver_value
+base|USFED,base,USFED,3.88,gold.de_scenario_driver_value
+base|DXY,base,DXY,102.30000305175781,gold.de_scenario_driver_value
+base|NOGDP,base,NOGDP,3.5,gold.de_scenario_driver_value

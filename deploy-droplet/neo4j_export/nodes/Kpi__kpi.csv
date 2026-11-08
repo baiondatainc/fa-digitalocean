@@ -38,3 +38,29 @@ GDP_CONSTANT_2015_USD,"GDP, constant 2015 USD",USD_BN,A,macro,FAO Macro Indicato
 AGRI_VALUE_ADDED_USD,"Agriculture value added, constant 2015 USD",USD_BN,A,macro,FAO Macro Indicators,public.kpi
 ECONOMY_GROUP,WEO economy group,INDEX,A,helper,,public.kpi
 DXB_REAL_GDP,"Dubai real GDP (AED m, constant basis)",AED m,annual,economy,,public.kpi
+GDP_PPP_INTL_BN,"GDP, PPP",USD_BN,A,macro,,public.kpi
+GDP_PER_CAPITA_PPP,"GDP per capita, PPP",USD,A,macro,,public.kpi
+GDP_PPP_WORLD_SHARE,"GDP based on PPP, share of world",PCT,A,macro,,public.kpi
+PPP_CONVERSION_RATE,Implied PPP conversion rate,INDEX,A,macro,,public.kpi
+CPI_EOP_YOY,"Inflation, end of period consumer prices",PCT,A,macro,,public.kpi
+CURRENT_ACCOUNT_USD,Current account balance,USD_BN,A,external,,public.kpi
+FM_OVERALL_BALANCE_PCT_GDP,Net lending/borrowing (overall balance),PCT_GDP,A,fiscal,,public.kpi
+FM_PRIMARY_BALANCE_PCT_GDP,Primary net lending/borrowing (primary balance),PCT_GDP,A,fiscal,,public.kpi
+FM_CYCLICALLY_ADJ_BALANCE,Cyclically adjusted balance,PCT_GDP,A,fiscal,,public.kpi
+FM_CYCLICALLY_ADJ_PRIMARY_BALANCE,Cyclically adjusted primary balance,PCT_GDP,A,fiscal,,public.kpi
+RESERVES_ARA_RATIO,Ratio of reserves to ARA metric,INDEX,A,external,,public.kpi
+RESERVES_TO_BROAD_MONEY,Reserves / broad money,INDEX,A,external,,public.kpi
+RESERVES_TO_SHORT_TERM_DEBT,Reserves / short-term debt,INDEX,A,external,,public.kpi
+RESERVES_IMPORT_COVER,Reserves / (imports / 12),INDEX,A,external,,public.kpi
+PRIVATE_DEBT_LS_PCT_GDP,"Private debt, loans and debt securities",PCT_GDP,A,macro,,public.kpi
+HOUSEHOLD_DEBT_LS_PCT_GDP,"Household debt, loans and debt securities",PCT_GDP,A,macro,,public.kpi
+NFC_DEBT_LS_PCT_GDP,"Nonfinancial corporate debt, loans and debt securities",PCT_GDP,A,macro,,public.kpi
+PRIVATE_DEBT_ALL_PCT_GDP,"Private debt, all instruments",PCT_GDP,A,macro,,public.kpi
+AIPI_INDEX,AI Preparedness Index,INDEX,A,sector,,public.kpi
+AIPI_DIGITAL_INFRASTRUCTURE,AI Preparedness: digital infrastructure,INDEX,A,sector,,public.kpi
+AIPI_INNOVATION_INTEGRATION,AI Preparedness: innovation and economic integration,INDEX,A,sector,,public.kpi
+AIPI_HUMAN_CAPITAL,AI Preparedness: human capital and labor market policies,INDEX,A,sector,,public.kpi
+PF_REVENUE_PCT_GDP,Government revenue (historical public finances),PCT_GDP,A,fiscal,,public.kpi
+PF_EXPENDITURE_PCT_GDP,Government expenditure (historical public finances),PCT_GDP,A,fiscal,,public.kpi
+PF_PRIMARY_EXPENDITURE_PCT_GDP,Government primary expenditure (historical public finances),PCT_GDP,A,fiscal,,public.kpi
+PF_INTEREST_PCT_GDP,Interest paid on public debt (historical public finances),PCT_GDP,A,fiscal,,public.kpi

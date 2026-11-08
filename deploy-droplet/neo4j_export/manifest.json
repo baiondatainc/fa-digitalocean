@@ -796,6 +796,7 @@
           "created_at:datetime",
           "engine_run_id:string",
           "vintages:string",
+          "what_if:string",
           "_origin:string"
         ]
       },
@@ -814,6 +815,7 @@
         "created_at": "datetime",
         "engine_run_id": "string",
         "vintages": "string",
+        "what_if": "string",
         "_origin": "string"
       }
     },

@@ -72,7 +72,7 @@ services:
       start_period: 40s
 
   synthea-agent:
-    image: registry.digitalocean.com/future-advisor/synthea-agent:v1.0.5
+    image: registry.digitalocean.com/future-advisor/synthea-agent:v1.1.0
     container_name: fa-synthea-agent
     restart: unless-stopped
     networks: [fa_internal]
@@ -115,7 +115,7 @@ services:
       - ./patches/chain.py:/app/qa/chain.py:ro
 
   librechat:
-    image: registry.digitalocean.com/future-advisor/librechat:v1.0.1
+    image: registry.digitalocean.com/future-advisor/librechat:v1.1.0
     container_name: fa-librechat
     restart: unless-stopped
     networks: [fa_internal]

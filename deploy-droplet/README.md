@@ -55,7 +55,7 @@ chat.your-domain.com {
 
 ## What's NOT in this compose
 
-- **synthea-agent** (`registry.digitalocean.com/future-advisor/synthea-agent:v1.0.5`)
+- **synthea-agent** (`registry.digitalocean.com/future-advisor/synthea-agent:v1.1.0`)
   — you said the app is already running on the droplet. If you need to redeploy
   it, the agent env is in `../../RP/dockers/docker-compose.yml` (service `agent`).
 - **Neo4j / Ollama / Redis / Postgres** — part of the "app already running".
