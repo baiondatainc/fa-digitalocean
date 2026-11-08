@@ -1,0 +1,32 @@
+# Caddy routes for the full droplet stack.
+#
+# PUBLIC_ORIGIN from .env is substituted via Caddy's ${…} expansion at
+# container start (Caddy honours environment variables natively).
+#
+#   https://<host>/graphql   → api:4000
+#   https://<host>/chat/*    → librechat:3080   (optional; LibreChat also
+#                              listens on :3080 directly if you’d rather
+#                              publish that host port and skip /chat)
+#   https://<host>/*         → web:3000
+#
+# For a bare IP without DNS, replace `{$PUBLIC_ORIGIN}` with `:80 {` and
+# drop the `tls` auto-cert line.
+
+{$PUBLIC_ORIGIN} {
+    encode zstd gzip
+
+    @graphql path /graphql /graphql/*
+    handle @graphql {
+        reverse_proxy api:4000
+    }
+
+    @chat path /chat /chat/*
+    handle @chat {
+        uri strip_prefix /chat
+        reverse_proxy librechat:3080
+    }
+
+    handle {
+        reverse_proxy web:3000
+    }
+}
