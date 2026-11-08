@@ -1,4 +1,81 @@
-# LibreChat — droplet deployment
+# Droplet deployment
+
+Two bundles live in this folder — pick the one that matches what the droplet
+is supposed to run:
+
+| Bundle                 | Compose file             | Installer           | Scope |
+|------------------------|--------------------------|---------------------|-------|
+| **Chatbot only**       | `docker-compose.yml`     | `install.sh`        | LibreChat + synthea-agent + Neo4j + MongoDB + Meilisearch |
+| **Full application**   | `docker-compose.full.yml`| `install-full.sh`   | web + api + forecast-py + forecast-agent + ingest-worker + live-agent + synthea-agent + librechat + all data stores + Caddy proxy |
+
+The full-stack bundle pulls every FA image from the DO container registry
+(`registry.digitalocean.com/future-advisor/*`). Build + push them first with:
+
+```bash
+# from the alpha repo root
+cd future-advisor && ./scripts/push-docker-do.sh            # api, web, forecast-py, forecast-agent, ingest-worker
+TAG=latest ./scripts/push-docker-do.sh live-agent           # live-agent (not pushed by default)
+cd ../synthea-neo4j && ./build-and-push.sh                  # synthea-agent
+cd ../LibreChat    && ./build-and-push.sh                   # librechat
+```
+
+> **`probe`** on the registry is an ad-hoc diagnostic image — not wired into
+> either compose file. Delete it or ignore it.
+
+## Full application — quick start
+
+```bash
+# On the droplet, in /opt/future-advisor (or wherever this bundle lives):
+cp .env.full.example .env     # install-full.sh will do this for you + generate random secrets
+$EDITOR .env                  # set PUBLIC_ORIGIN, AGENT_LLM_API_KEY, FRED_API_KEY, etc.
+bash install-full.sh
+```
+
+`install-full.sh` is idempotent: it generates missing secrets, pulls images,
+brings the stack up, waits for Timescale + Neo4j, seeds the Neo4j schema,
+and prints public URLs + health checks at the end. Re-run safely after any
+`.env` or compose change.
+
+Flags:
+- `--no-pull`  skip `docker compose pull` (use already-loaded images)
+- `--no-seed`  skip Neo4j schema seed + Ollama Modelfile registration
+
+### What's exposed
+
+| Port     | Service            | Notes |
+|----------|--------------------|-------|
+| 80, 443  | Caddy proxy        | TLS auto-cert if `PUBLIC_ORIGIN` is a domain |
+| 7474     | Neo4j browser      | bound to `127.0.0.1` (use SSH tunnel) |
+| 7687     | Neo4j Bolt         | bound to `127.0.0.1` |
+
+The API, web, forecast-py, forecast-agent, Postgres, Redis, MongoDB,
+Meilisearch, LibreChat and the workers are internal-only (reach them via the
+proxy or `docker exec`). LibreChat is routed at `/chat` through Caddy — bind
+it to a host port in `docker-compose.full.yml` if you’d rather hit `:3080`
+directly.
+
+### Database bootstrap (first deploy only)
+
+The API’s Prisma migrations have to be applied once against the local
+Timescale container:
+
+```bash
+docker exec -it fa-api sh -c '\
+  cd /repo/packages/db-main-prisma && \
+  ./node_modules/.bin/prisma migrate deploy'
+```
+
+### Rolling a new image
+
+```bash
+# bump IMAGE_TAG (or just the per-service *_TAG) in .env, then:
+docker compose -f docker-compose.full.yml pull <service>
+docker compose -f docker-compose.full.yml up -d <service>
+```
+
+---
+
+# LibreChat — droplet deployment (chatbot only)
 
 LibreChat UI + MongoDB + Meilisearch, pulling from the DO private registry.
 Assumes the DoF agent (synthea-agent image) is already running on the droplet
