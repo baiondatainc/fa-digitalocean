@@ -34,30 +34,46 @@ done
 
 rand_hex() { openssl rand -hex "$1"; }
 
-sub_if_placeholder() {
-  # sub_if_placeholder <KEY> <VALUE>  → replaces KEY=REPLACE_ME in .env
-  local key=$1 val=$2
-  sed -i "s|^${key}=REPLACE_ME.*|${key}=${val}|" "$ENV_FILE"
+# rotate <KEY> <bytes>  → replaces the KEY= line with KEY=<fresh random hex>
+# only when the current value matches a known placeholder (REPLACE_ME or
+# CHANGE_ME_*). Leaves real values alone so re-running is safe.
+rotate() {
+  local key=$1 bytes=$2 val
+  val=$(rand_hex "$bytes")
+  # Use `#` as the sed delimiter so the ERE alternation `|` isn't treated as one.
+  sed -i -E "s#^${key}=(REPLACE_ME.*|CHANGE_ME_.*)\$#${key}=${val}#" "$ENV_FILE"
 }
 
 echo "==> 1/7 Generate .env (if missing)"
 if [[ ! -f "$ENV_FILE" ]]; then
   cp "$EXAMPLE_FILE" "$ENV_FILE"
   chmod 600 "$ENV_FILE"
-  sub_if_placeholder POSTGRES_PASSWORD "$(rand_hex 16)"
-  sub_if_placeholder JWT_SECRET "$(rand_hex 32)"
-  sub_if_placeholder FORECAST_SERVICE_TOKEN "$(rand_hex 32)"
-  sub_if_placeholder AGENT_API_TOKEN "$(rand_hex 32)"
-  sub_if_placeholder NEO4J_PASSWORD "$(rand_hex 16)"
-  sub_if_placeholder LIBRECHAT_JWT_SECRET "$(rand_hex 32)"
-  sub_if_placeholder LIBRECHAT_JWT_REFRESH_SECRET "$(rand_hex 32)"
-  sub_if_placeholder CREDS_KEY "$(rand_hex 32)"
-  sub_if_placeholder CREDS_IV "$(rand_hex 16)"
-  sub_if_placeholder MEILI_MASTER_KEY "$(rand_hex 32)"
+  rotate POSTGRES_PASSWORD 16
+  rotate JWT_SECRET 32
+  rotate FORECAST_SERVICE_TOKEN 32
+  rotate AGENT_API_TOKEN 32
+  rotate NEO4J_PASSWORD 16
+  rotate LIBRECHAT_JWT_SECRET 32
+  rotate LIBRECHAT_JWT_REFRESH_SECRET 32
+  rotate CREDS_KEY 32
+  rotate CREDS_IV 16
+  rotate MEILI_MASTER_KEY 32
   echo "    generated $ENV_FILE"
-  echo "    EDIT $ENV_FILE to set PUBLIC_ORIGIN before HTTPS will work."
+  echo "    EDIT $ENV_FILE to set PUBLIC_ORIGIN, AGENT_LLM_API_KEY, FRED_API_KEY, etc."
 else
   echo "    $ENV_FILE already exists — keeping"
+  # Still rotate anything that's still a CHANGE_ME_* placeholder (e.g. the user
+  # edited the example and ran the installer without regenerating secrets).
+  rotate POSTGRES_PASSWORD 16
+  rotate JWT_SECRET 32
+  rotate FORECAST_SERVICE_TOKEN 32
+  rotate AGENT_API_TOKEN 32
+  rotate NEO4J_PASSWORD 16
+  rotate LIBRECHAT_JWT_SECRET 32
+  rotate LIBRECHAT_JWT_REFRESH_SECRET 32
+  rotate CREDS_KEY 32
+  rotate CREDS_IV 16
+  rotate MEILI_MASTER_KEY 32
 fi
 
 set -a; source "$ENV_FILE"; set +a
